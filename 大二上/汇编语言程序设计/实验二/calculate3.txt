@@ -1,0 +1,25 @@
+data segment
+	x db 3
+	y db 2
+	z db 7
+	w db ?,?
+data ends
+code segment
+	assume cs:code,ds:data
+start:
+	mov ax,data
+	mov ds,ax
+	mov al,x
+	add al,y
+	sub al,z
+	mov w,al
+	
+	mov ah,2
+	add al,30h
+	mov dl,al
+	int 21h
+
+	mov ah,4ch
+	int 21h
+code ends
+	end start

@@ -1,0 +1,80 @@
+.model small
+.stack 100h
+
+.data
+    	promptX db 'Enter value for x: $'
+    	promptY db 'Enter value for y: $'
+    	promptZ db 'Enter value for z: $'
+    	resultMsg db 'The result (x+y-z) is: $'
+    	newline db 0Dh, 0Ah, '$'
+    	x db ?
+   	y db ?
+   	z db ?
+
+.code
+start:
+    	mov ax,@data
+    	mov ds,ax
+
+    	mov dx, offset promptX
+    	call PrintString
+    	call GetNumber
+    	mov x, al
+    	call PrintNewLine
+
+    	mov dx, offset promptY
+    	call PrintString
+    	call GetNumber
+    	mov y, al
+    	call PrintNewLine
+
+    	mov dx, offset promptZ
+    	call PrintString
+    	call GetNumber
+    	mov z, al
+    	call PrintNewLine
+
+    	mov al, x
+    	add al, y
+    	sub al, z
+    	mov z, al
+
+    	mov dx, offset resultMsg
+    	call PrintString
+
+    	mov al, z
+    	call PrintNumber
+    	call PrintNewLine
+
+    	mov ah, 0
+    	int 16h
+
+    	mov ax, 4C00h
+    	int 21h
+
+PrintString:
+    	mov ah, 9
+    	int 21h
+    	ret
+
+GetNumber:
+    	mov ah, 1  ; DOS function: Read character from STDIN
+    	int 21h    ; AL will have the input character
+    	sub al, '0'  ; Convert ASCII to numerical value
+    	ret
+
+PrintNumber:
+    add al, '0'  ; Convert numerical value to ASCII
+    mov dl, al
+    mov ah, 2    ; DOS function: Write character to STDOUT
+    int 21h
+    ret
+
+PrintNewLine:
+    ; Prints a new line and carriage return
+    mov ah, 9
+    mov dx, offset newline
+    int 21h
+    ret
+
+end start

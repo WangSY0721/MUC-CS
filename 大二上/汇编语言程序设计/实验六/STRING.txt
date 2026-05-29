@@ -1,0 +1,54 @@
+.MODEL SMALL
+.STACK 100H
+.DATA
+INPUT_STRING DB 'HELLO WORLD$',0
+
+.CODE
+START:
+    MOV AX,@DATA
+    MOV DS,AX
+    MOV ES,AX
+    MOV SS,AX
+    MOV SP,100H
+
+    LEA DX,INPUT_STRING
+    CALL ConvertToLower
+    MOV AH,9   
+    INT 21H     
+
+    MOV AX,4C00H     
+    INT 21H         
+
+ConvertToLower PROC NEAR
+    PUSH AX
+    PUSH BX
+    PUSH CX
+    PUSH DX
+    PUSH SI
+
+    LEA SI,INPUT_STRING;
+
+    NEXT_CHAR:
+        MOV AL,[SI]       
+        CMP AL,'$'          
+        JE END_CONVERSION    
+        CMP AL,'A'
+        JB SKIP_CONVERSION
+        CMP AL,'Z'
+        JA SKIP_CONVERSION
+        ADD AL,32            
+        MOV [SI],AL       
+
+    SKIP_CONVERSION:
+        INC SI                 
+        JMP NEXT_CHAR  
+        
+    END_CONVERSION:
+        POP SI
+        POP DX
+        POP CX
+        POP BX
+        POP AX
+        RET
+ConvertToLower ENDP
+END START

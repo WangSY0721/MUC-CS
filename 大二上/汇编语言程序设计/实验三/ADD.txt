@@ -1,0 +1,44 @@
+DATA SEGMENT
+    X   DB ?
+    Y   DB ?
+    Z   DB ?
+    W   DB ?, ?
+DATA ENDS
+
+CODE SEGMENT
+    ASSUME CS:CODE, DS:DATA
+
+START:
+    MOV AX, DATA
+    MOV DS, AX
+
+    MOV AH,01h      
+    INT 21h         
+    SUB AL,30h     
+    MOV X,AL
+
+    MOV AH,01h     
+    INT 21h          
+    SUB AL,30h      
+    MOV Y,AL
+
+    MOV AH,01h    
+    INT 21h       
+    SUB AL,30h    
+    MOV Z,AL
+
+    MOV AL,X
+    ADD AL,Y
+    SUB AL,Z
+    MOV W,AL
+
+    MOV AH,02h  
+    ADD AL,30h     
+    MOV DL,AL
+    INT 21h      
+
+    MOV AH,4Ch     
+    INT 21h         
+
+CODE ENDS
+END START
