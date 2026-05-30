@@ -1,0 +1,37 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Quartus_Projects\lab2_LookaheadCarry\simulation\modelsim
+vlab2_LookaheadCarry
+IANY5fWbFYO0JRK?@Fz^<j0
+V]JgLF5>aIiP9O<O6Xf4nO3
+w1524911099
+8lab2_LookaheadCarry.vo
+Flab2_LookaheadCarry.vo
+L0 31
+Z1 OV;L;6.5e;42
+r1
+31
+Z2 o-vlog01compat -work work -O0
+nlab2_@lookahead@carry
+!s100 ^@J>@b7E^=3GUDcj6MGST2
+!s85 0
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vlab2_LookaheadCarry_vlg_tst
+!s100 c?cCP`3`hk=0mh^iGZWQ21
+Ini[?`m4fA=[;K[M5`I:fi3
+V[U`K>RBOA94E4SPAa^m8L3
+w1524911327
+8E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry.vt
+FE:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry.vt
+L0 28
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R2
+!s92 -vlog01compat -work work +incdir+E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim -O0
+nlab2_@lookahead@carry_vlg_tst

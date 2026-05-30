@@ -1,0 +1,11 @@
+module InsMem(
+	input [31:0] pc_addr,
+	output [31:0] ins
+);
+reg [31:0] RAM[1023:0];
+initial
+	begin
+		$readmemh("D:\CPU\insmem.txt"，RAM);
+	end
+assign ins=RAM[pc_addr[31:2]];
+endmodule

@@ -1,0 +1,85 @@
+// Copyright (C) 1991-2010 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "04/24/2018 15:13:13"
+                                                                                
+// Verilog Test Bench template for design : lab2_3
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module lab2_3_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg [31:0] a;
+reg [31:0] b;
+reg c0;
+reg cclr;
+reg clock;
+// wires                                               
+wire carry_out3;
+wire [31:0]  out;
+
+// assign statements (if any)                          
+lab2_3 i1 (
+// port map - connection between master ports and signals/registers   
+	.a(a),
+	.b(b),
+	.c0(c0),
+	.carry_out3(carry_out3),
+	.cclr(cclr),
+	.clock(clock),
+	.out(out)
+);
+ integer i,j;
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+     a=32'b11111111111111111111111111111111;    
+     b=32'b00000000000000000000000000000001;    
+     c0=0;
+     clock = 0;
+     #15 cclr = 0;
+     #10 cclr= 1;  
+     #20 clock = ~clock;
+     #20 
+     #20 clock = ~clock;
+                                         
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+                 
+begin
+  for(i=0;i<10;i=i+1)
+  for(j=0;j<10;j=j+1)
+    begin
+      #10 a=i;b=j;
+      #20
+      #20 clock = ~clock; 
+      #20
+      #20 clock = ~clock;
+    end                                                 
+                                        
+end                                                    
+endmodule

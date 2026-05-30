@@ -1,0 +1,194 @@
+# Reading D:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do CPU_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/result.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:10 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/result.v 
+# -- Compiling module Result
+# 
+# Top level modules:
+# 	Result
+# End time: 19:02:10 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/regfile.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:10 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/regfile.v 
+# -- Compiling module RegFile
+# 
+# Top level modules:
+# 	RegFile
+# End time: 19:02:11 on Dec 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/control.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:11 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/control.v 
+# -- Compiling module Control
+# 
+# Top level modules:
+# 	Control
+# End time: 19:02:11 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/instructionslice.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:11 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/instructionslice.v 
+# -- Compiling module InstructionSlice
+# 
+# Top level modules:
+# 	InstructionSlice
+# End time: 19:02:11 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/insmem.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:11 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/insmem.v 
+# -- Compiling module InsMem
+# 
+# Top level modules:
+# 	InsMem
+# End time: 19:02:11 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/pc.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:11 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/pc.v 
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# End time: 19:02:11 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/mux.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:11 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/mux.v 
+# -- Compiling module Mux
+# 
+# Top level modules:
+# 	Mux
+# End time: 19:02:11 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:11 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/alu.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 19:02:11 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/inmediateextend.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:12 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/inmediateextend.v 
+# -- Compiling module InmediateExtend
+# 
+# Top level modules:
+# 	InmediateExtend
+# End time: 19:02:12 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/add.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:12 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/add.v 
+# -- Compiling module Add
+# 
+# Top level modules:
+# 	Add
+# End time: 19:02:12 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/left.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:12 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/left.v 
+# -- Compiling module Left
+# 
+# Top level modules:
+# 	Left
+# End time: 19:02:12 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/mux4.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:12 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/mux4.v 
+# -- Compiling module Mux4
+# 
+# Top level modules:
+# 	Mux4
+# End time: 19:02:12 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/inputextend.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:12 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/inputextend.v 
+# -- Compiling module InputExtend
+# 
+# Top level modules:
+# 	InputExtend
+# End time: 19:02:12 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU {D:/altera/Compute/lab6/CPU/inputdata.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:12 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU" D:/altera/Compute/lab6/CPU/inputdata.v 
+# -- Compiling module InputData
+# 
+# Top level modules:
+# 	InputData
+# End time: 19:02:12 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU/simulation/modelsim {D:/altera/Compute/lab6/CPU/simulation/modelsim/CPU.vt}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:02:12 on Dec 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/Compute/lab6/CPU/simulation/modelsim" D:/altera/Compute/lab6/CPU/simulation/modelsim/CPU.vt 
+# -- Compiling module CPU_vlg_tst
+# 
+# Top level modules:
+# 	CPU_vlg_tst
+# End time: 19:02:12 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  CPU_vlg_tst
+# vsim -gui "+altera" -l msim_transcript -do "CPU_run_msim_rtl_verilog.do" 
+# Start time: 19:02:13 on Dec 23,2022
+# Loading work.CPU_vlg_tst
+# ** Error: (vsim-3033) D:/altera/Compute/lab6/CPU/simulation/modelsim/CPU.vt(48): Instantiation of 'CPU' failed. The design unit was not found.
+# 
+#         Region: /CPU_vlg_tst
+#         Searched libraries:
+#             D:/altera/15.0/modelsim_ase/altera/verilog/altera
+#             D:/altera/15.0/modelsim_ase/altera/verilog/220model
+#             D:/altera/15.0/modelsim_ase/altera/verilog/sgate
+#             D:/altera/15.0/modelsim_ase/altera/verilog/altera_mf
+#             D:/altera/15.0/modelsim_ase/altera/verilog/altera_lnsim
+#             D:/altera/15.0/modelsim_ase/altera/verilog/cycloneive
+#             D:/altera/Compute/lab6/CPU/simulation/modelsim/rtl_work
+#             D:/altera/Compute/lab6/CPU/simulation/modelsim/rtl_work
+#             D:/altera/Compute/lab6/CPU/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./CPU_run_msim_rtl_verilog.do PAUSED at line 25
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# End time: 19:06:07 on Dec 23,2022, Elapsed time: 0:03:54
+# Errors: 1, Warnings: 0

@@ -1,0 +1,27 @@
+|InputData
+clk => outputData[0]~reg0.CLK
+clk => outputData[1]~reg0.CLK
+clk => outputData[2]~reg0.CLK
+clk => outputData[3]~reg0.CLK
+clk => outputData[4]~reg0.CLK
+clk => outputData[5]~reg0.CLK
+clk => outputData[6]~reg0.CLK
+clk => outputData[7]~reg0.CLK
+inputData[0] => outputData[0]~reg0.DATAIN
+inputData[1] => outputData[1]~reg0.DATAIN
+inputData[2] => outputData[2]~reg0.DATAIN
+inputData[3] => outputData[3]~reg0.DATAIN
+inputData[4] => outputData[4]~reg0.DATAIN
+inputData[5] => outputData[5]~reg0.DATAIN
+inputData[6] => outputData[6]~reg0.DATAIN
+inputData[7] => outputData[7]~reg0.DATAIN
+outputData[0] <= outputData[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outputData[1] <= outputData[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outputData[2] <= outputData[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outputData[3] <= outputData[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outputData[4] <= outputData[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outputData[5] <= outputData[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outputData[6] <= outputData[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outputData[7] <= outputData[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

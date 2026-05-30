@@ -1,0 +1,86 @@
+Quartus II
+Version 10.0 Build 218 06/27/2010 SJ Web Edition
+13
+1247
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+lab2_3
+# storage
+db|lab2_3.(0).cnf
+db|lab2_3.(0).cnf
+# case_insensitive
+# source_file
+lab2_3.bdf
+5592bc07910881bf068477a788aa6d8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+lab2_LookaheadCarry
+# storage
+db|lab2_3.(1).cnf
+db|lab2_3.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+lab2_lookaheadcarry.v
+4e5aa82ff91d2e5e2d5b417af7b8c681
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+lab2_LookaheadCarry:inst8
+lab2_LookaheadCarry:inst7
+lab2_LookaheadCarry:inst6
+lab2_LookaheadCarry:inst5
+lab2_LookaheadCarry:inst4
+lab2_LookaheadCarry:inst3
+lab2_LookaheadCarry:inst2
+lab2_LookaheadCarry:inst
+}
+# macro_sequence
+
+# end
+# complete
+

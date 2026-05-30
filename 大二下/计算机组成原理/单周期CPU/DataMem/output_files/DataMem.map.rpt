@@ -1,0 +1,1245 @@
+Analysis & Synthesis report for DataMem
+Fri Dec 23 15:44:50 2022
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Dec 23 15:44:49 2022       ;
+; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Full Version ;
+; Revision Name                      ; DataMem                                     ;
+; Top-level Entity Name              ; DataMem                                     ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 1,830                                       ;
+;     Total combinational functions  ; 1,830                                       ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 98                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE40F29C7       ;                    ;
+; Top-level entity name                                                      ; DataMem            ; DataMem            ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 8           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ; < 0.1%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                           ;
++----------------------------------+-----------------+------------------------+------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path             ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------+---------+
+; DataMem.v                        ; yes             ; User Verilog HDL File  ; D:/altera/Compute/lab6/DataMem/DataMem.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 1,830          ;
+;                                             ;                ;
+; Total combinational functions               ; 1830           ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 1216           ;
+;     -- 3 input functions                    ; 515            ;
+;     -- <=2 input functions                  ; 99             ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 1738           ;
+;     -- arithmetic mode                      ; 92             ;
+;                                             ;                ;
+; Total registers                             ; 0              ;
+;     -- Dedicated logic registers            ; 0              ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 98             ;
+;                                             ;                ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; DAddr[0]~input ;
+; Maximum fan-out                             ; 146            ;
+; Total fan-out                               ; 6734           ;
+; Average fan-out                             ; 3.32           ;
++---------------------------------------------+----------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |DataMem                   ; 1830 (1830)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 98   ; 0            ; |DataMem            ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                 ;
++------------------------------------------------------+---------------------+------------------------+
+; Latch Name                                           ; Latch Enable Signal ; Free of Timing Hazards ;
++------------------------------------------------------+---------------------+------------------------+
+; Mout[0]$latch                                        ; Read                ; yes                    ;
+; Mout[1]$latch                                        ; Read                ; yes                    ;
+; Mout[2]$latch                                        ; Read                ; yes                    ;
+; Mout[3]$latch                                        ; Read                ; yes                    ;
+; Mout[4]$latch                                        ; Read                ; yes                    ;
+; Mout[5]$latch                                        ; Read                ; yes                    ;
+; Mout[6]$latch                                        ; Read                ; yes                    ;
+; Mout[7]$latch                                        ; Read                ; yes                    ;
+; Mout[8]$latch                                        ; Read                ; yes                    ;
+; Mout[9]$latch                                        ; Read                ; yes                    ;
+; Mout[10]$latch                                       ; Read                ; yes                    ;
+; Mout[11]$latch                                       ; Read                ; yes                    ;
+; Mout[12]$latch                                       ; Read                ; yes                    ;
+; Mout[13]$latch                                       ; Read                ; yes                    ;
+; Mout[14]$latch                                       ; Read                ; yes                    ;
+; Mout[15]$latch                                       ; Read                ; yes                    ;
+; Mout[16]$latch                                       ; Read                ; yes                    ;
+; Mout[17]$latch                                       ; Read                ; yes                    ;
+; Mout[18]$latch                                       ; Read                ; yes                    ;
+; Mout[19]$latch                                       ; Read                ; yes                    ;
+; Mout[20]$latch                                       ; Read                ; yes                    ;
+; Mout[21]$latch                                       ; Read                ; yes                    ;
+; Mout[22]$latch                                       ; Read                ; yes                    ;
+; Mout[23]$latch                                       ; Read                ; yes                    ;
+; Mout[24]$latch                                       ; Read                ; yes                    ;
+; Mout[25]$latch                                       ; Read                ; yes                    ;
+; Mout[26]$latch                                       ; Read                ; yes                    ;
+; Mout[27]$latch                                       ; Read                ; yes                    ;
+; Mout[28]$latch                                       ; Read                ; yes                    ;
+; Mout[29]$latch                                       ; Read                ; yes                    ;
+; Mout[30]$latch                                       ; Read                ; yes                    ;
+; Mout[31]$latch                                       ; Read                ; yes                    ;
+; Ram[10][0]                                           ; Ram[10][0]          ; yes                    ;
+; Ram[9][0]                                            ; Ram[9][0]           ; yes                    ;
+; Ram[8][0]                                            ; Ram[8][0]           ; yes                    ;
+; Ram[11][0]                                           ; Ram[11][0]          ; yes                    ;
+; Ram[5][0]                                            ; Ram[5][0]           ; yes                    ;
+; Ram[6][0]                                            ; Ram[6][0]           ; yes                    ;
+; Ram[4][0]                                            ; Ram[4][0]           ; yes                    ;
+; Ram[7][0]                                            ; Ram[7][0]           ; yes                    ;
+; Ram[2][0]                                            ; Ram[2][0]           ; yes                    ;
+; Ram[1][0]                                            ; Ram[1][0]           ; yes                    ;
+; Ram[0][0]                                            ; Ram[0][0]           ; yes                    ;
+; Ram[3][0]                                            ; Ram[3][0]           ; yes                    ;
+; Ram[13][0]                                           ; Ram[13][0]          ; yes                    ;
+; Ram[14][0]                                           ; Ram[14][0]          ; yes                    ;
+; Ram[12][0]                                           ; Ram[12][0]          ; yes                    ;
+; Ram[15][0]                                           ; Ram[15][0]          ; yes                    ;
+; Ram[28][0]                                           ; Ram[28][0]          ; yes                    ;
+; Ram[26][0]                                           ; Ram[26][0]          ; yes                    ;
+; Ram[24][0]                                           ; Ram[24][0]          ; yes                    ;
+; Ram[30][0]                                           ; Ram[30][0]          ; yes                    ;
+; Ram[21][0]                                           ; Ram[21][0]          ; yes                    ;
+; Ram[19][0]                                           ; Ram[19][0]          ; yes                    ;
+; Ram[17][0]                                           ; Ram[17][0]          ; yes                    ;
+; Ram[23][0]                                           ; Ram[23][0]          ; yes                    ;
+; Ram[20][0]                                           ; Ram[20][0]          ; yes                    ;
+; Ram[18][0]                                           ; Ram[18][0]          ; yes                    ;
+; Ram[16][0]                                           ; Ram[16][0]          ; yes                    ;
+; Ram[22][0]                                           ; Ram[22][0]          ; yes                    ;
+; Ram[29][0]                                           ; Ram[29][0]          ; yes                    ;
+; Ram[27][0]                                           ; Ram[27][0]          ; yes                    ;
+; Ram[25][0]                                           ; Ram[25][0]          ; yes                    ;
+; Ram[31][0]                                           ; Ram[31][0]          ; yes                    ;
+; Ram[12][1]                                           ; Ram[12][0]          ; yes                    ;
+; Ram[9][1]                                            ; Ram[9][0]           ; yes                    ;
+; Ram[8][1]                                            ; Ram[8][0]           ; yes                    ;
+; Ram[13][1]                                           ; Ram[13][0]          ; yes                    ;
+; Ram[3][1]                                            ; Ram[3][0]           ; yes                    ;
+; Ram[6][1]                                            ; Ram[6][0]           ; yes                    ;
+; Ram[2][1]                                            ; Ram[2][0]           ; yes                    ;
+; Ram[7][1]                                            ; Ram[7][0]           ; yes                    ;
+; Ram[1][1]                                            ; Ram[1][0]           ; yes                    ;
+; Ram[4][1]                                            ; Ram[4][0]           ; yes                    ;
+; Ram[0][1]                                            ; Ram[0][0]           ; yes                    ;
+; Ram[5][1]                                            ; Ram[5][0]           ; yes                    ;
+; Ram[11][1]                                           ; Ram[11][0]          ; yes                    ;
+; Ram[14][1]                                           ; Ram[14][0]          ; yes                    ;
+; Ram[10][1]                                           ; Ram[10][0]          ; yes                    ;
+; Ram[15][1]                                           ; Ram[15][0]          ; yes                    ;
+; Ram[26][1]                                           ; Ram[26][0]          ; yes                    ;
+; Ram[25][1]                                           ; Ram[25][0]          ; yes                    ;
+; Ram[24][1]                                           ; Ram[24][0]          ; yes                    ;
+; Ram[27][1]                                           ; Ram[27][0]          ; yes                    ;
+; Ram[22][1]                                           ; Ram[22][0]          ; yes                    ;
+; Ram[21][1]                                           ; Ram[21][0]          ; yes                    ;
+; Ram[20][1]                                           ; Ram[20][0]          ; yes                    ;
+; Ram[23][1]                                           ; Ram[23][0]          ; yes                    ;
+; Ram[18][1]                                           ; Ram[18][0]          ; yes                    ;
+; Ram[17][1]                                           ; Ram[17][0]          ; yes                    ;
+; Ram[16][1]                                           ; Ram[16][0]          ; yes                    ;
+; Ram[19][1]                                           ; Ram[19][0]          ; yes                    ;
+; Ram[30][1]                                           ; Ram[30][0]          ; yes                    ;
+; Ram[29][1]                                           ; Ram[29][0]          ; yes                    ;
+; Ram[28][1]                                           ; Ram[28][0]          ; yes                    ;
+; Ram[31][1]                                           ; Ram[31][0]          ; yes                    ;
+; Ram[12][2]                                           ; Ram[12][0]          ; yes                    ;
+; Ram[10][2]                                           ; Ram[10][0]          ; yes                    ;
+; Ram[8][2]                                            ; Ram[8][0]           ; yes                    ;
+; Ram[14][2]                                           ; Ram[14][0]          ; yes                    ;
+; Number of user-specified and inferred latches = 288  ;                     ;                        ;
++------------------------------------------------------+---------------------+------------------------+
+Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[31][0]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[30][6]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[29][0]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[28][5]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[27][6]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[26][4]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[25][5]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[24][1]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[23][5]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[22][0]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[21][3]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[20][0]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[19][4]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[18][4]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[17][1]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[16][3]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[15][2]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[14][2]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[13][2]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[12][4]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[11][2]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[10][2]        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[9][2]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[8][2]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[7][2]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[6][2]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[5][1]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[4][5]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[3][1]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[2][0]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[1][7]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DataMem|Ram[0][2]         ;
+; 16:1               ; 8 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |DataMem|Mux24             ;
+; 16:1               ; 8 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |DataMem|Mux15             ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |DataMem|Mux4              ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |DataMem|Mux23             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 98                          ;
+; cycloneiii_lcell_comb ; 1830                        ;
+;     arith             ; 92                          ;
+;         2 data inputs ; 92                          ;
+;     normal            ; 1738                        ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 515                         ;
+;         4 data inputs ; 1216                        ;
+;                       ;                             ;
+; Max LUT depth         ; 13.00                       ;
+; Average LUT depth     ; 9.31                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:05     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Full Version
+    Info: Processing started: Fri Dec 23 15:44:27 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DataMem -c DataMem
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file datamem.v
+    Info (12023): Found entity 1: DataMem
+Info (12021): Found 0 design units, including 0 entities, in source file verilog4.v
+Info (12127): Elaborating entity "DataMem" for the top level hierarchy
+Warning (10240): Verilog HDL Always Construct warning at DataMem.v(18): inferring latch(es) for variable "Mout", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "Ram[31][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[31][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[31][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[31][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[31][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[31][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[31][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[31][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[30][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[30][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[30][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[30][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[30][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[30][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[30][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[30][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[29][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[29][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[29][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[29][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[29][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[29][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[29][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[29][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[28][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[28][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[28][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[28][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[28][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[28][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[28][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[28][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[27][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[27][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[27][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[27][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[27][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[27][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[27][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[27][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[26][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[26][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[26][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[26][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[26][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[26][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[26][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[26][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[25][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[25][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[25][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[25][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[25][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[25][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[25][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[25][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[24][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[24][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[24][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[24][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[24][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[24][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[24][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[24][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[23][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[23][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[23][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[23][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[23][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[23][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[23][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[23][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[22][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[22][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[22][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[22][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[22][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[22][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[22][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[22][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[21][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[21][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[21][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[21][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[21][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[21][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[21][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[21][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[20][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[20][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[20][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[20][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[20][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[20][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[20][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[20][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[19][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[19][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[19][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[19][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[19][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[19][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[19][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[19][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[18][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[18][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[18][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[18][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[18][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[18][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[18][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[18][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[17][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[17][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[17][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[17][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[17][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[17][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[17][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[17][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[16][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[16][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[16][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[16][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[16][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[16][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[16][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[16][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[15][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[15][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[15][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[15][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[15][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[15][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[15][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[15][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[14][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[14][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[14][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[14][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[14][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[14][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[14][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[14][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[13][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[13][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[13][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[13][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[13][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[13][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[13][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[13][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[12][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[12][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[12][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[12][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[12][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[12][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[12][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[12][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[11][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[11][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[11][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[11][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[11][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[11][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[11][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[11][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[10][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[10][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[10][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[10][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[10][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[10][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[10][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[10][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[9][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[9][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[9][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[9][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[9][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[9][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[9][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[9][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[8][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[8][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[8][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[8][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[8][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[8][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[8][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[8][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[7][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[7][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[7][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[7][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[7][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[7][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[7][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[7][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[6][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[6][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[6][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[6][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[6][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[6][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[6][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[6][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[5][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[5][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[5][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[5][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[5][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[5][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[5][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[5][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[4][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[4][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[4][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[4][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[4][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[4][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[4][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[4][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[3][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[3][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[3][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[3][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[3][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[3][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[3][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[3][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[2][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[2][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[2][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[2][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[2][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[2][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[2][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[2][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[1][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[1][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[1][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[1][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[1][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[1][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[1][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[1][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[0][0]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[0][1]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[0][2]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[0][3]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[0][4]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[0][5]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[0][6]" at DataMem.v(30)
+Info (10041): Inferred latch for "Ram[0][7]" at DataMem.v(30)
+Info (10041): Inferred latch for "Mout[0]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[1]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[2]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[3]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[4]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[5]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[6]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[7]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[8]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[9]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[10]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[11]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[12]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[13]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[14]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[15]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[16]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[17]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[18]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[19]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[20]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[21]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[22]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[23]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[24]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[25]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[26]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[27]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[28]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[29]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[30]" at DataMem.v(21)
+Info (10041): Inferred latch for "Mout[31]" at DataMem.v(21)
+Warning (13012): Latch Ram[10][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[9][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[8][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[11][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[5][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[6][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[4][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[7][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[2][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[1][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[0][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[3][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[13][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[14][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[12][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[15][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[28][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[26][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[24][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[30][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[21][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[19][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[17][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[23][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[20][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[18][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[16][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[22][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[29][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[27][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[25][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[31][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[12][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[9][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[8][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[13][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[3][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[6][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[2][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[7][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[1][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[4][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[0][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[5][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[11][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[14][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[10][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[15][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[26][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[25][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[24][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[27][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[22][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[21][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[20][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[23][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[18][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[17][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[16][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[19][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[30][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[29][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[28][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[31][1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[12][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[10][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[8][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[14][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[5][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[3][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[1][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[7][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[4][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[2][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[0][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[6][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[13][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[11][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[9][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[15][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[25][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[28][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[24][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[29][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[19][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[22][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[18][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[23][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[17][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[20][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[16][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[21][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[27][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[30][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[26][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[31][2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[10][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[9][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[8][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[11][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[6][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[5][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[4][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[7][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[2][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[1][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[0][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[3][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[14][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[13][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[12][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[15][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[28][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[26][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[24][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[30][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[21][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[19][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[17][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[23][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[20][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[18][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[16][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[22][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[29][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[27][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[25][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[31][3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[9][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[12][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[8][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[13][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[3][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[6][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[2][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[7][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[1][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[4][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[0][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[5][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[11][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[14][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[10][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[15][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[26][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[25][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[24][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[27][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[22][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[21][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[20][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[23][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[18][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[17][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[16][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[19][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[30][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[29][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[28][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[31][4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[12][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[10][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[8][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[14][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[5][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[3][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[1][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[7][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[4][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[2][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[0][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[6][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[13][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[11][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[9][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[15][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[25][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[28][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[24][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[29][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[19][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[22][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[18][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[23][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[17][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[20][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[16][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[21][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[27][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[30][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[26][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[31][5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[10][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[9][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[8][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[11][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[6][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[5][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[4][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[7][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[2][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[1][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[0][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[3][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[14][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[13][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[12][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[15][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[25][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[21][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[17][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[29][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[26][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[22][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[18][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[30][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[24][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[20][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[16][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[28][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[27][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[23][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[19][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[31][6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[10][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[9][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[8][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[11][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[5][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[6][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[4][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[7][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[2][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[1][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[0][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[3][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[13][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[14][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[12][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[15][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[26][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[22][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[18][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[30][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[25][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[21][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[17][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[29][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[24][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[20][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[16][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[28][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[27][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[23][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[19][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Warning (13012): Latch Ram[31][7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DAddr[3]
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1928 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 66 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 1830 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 513 warnings
+    Info: Peak virtual memory: 4900 megabytes
+    Info: Processing ended: Fri Dec 23 15:44:50 2022
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:45
+
+

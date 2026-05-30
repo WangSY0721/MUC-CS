@@ -1,0 +1,44 @@
+|lab2_RippleCarry
+dataa[0] => ci_temp.IN1
+dataa[0] => ci_temp.IN1
+dataa[1] => ci_temp.IN1
+dataa[1] => ci_temp.IN1
+dataa[2] => ci_temp.IN1
+dataa[2] => ci_temp.IN1
+dataa[3] => result_temp.IN1
+dataa[3] => ci_temp.IN1
+dataa[3] => result_temp.IN1
+datab[0] => datab_temp[0].DATAB
+datab[0] => datab_temp[0].DATAA
+datab[1] => datab_temp[1].DATAB
+datab[1] => datab_temp[1].DATAA
+datab[2] => datab_temp[2].DATAB
+datab[2] => datab_temp[2].DATAA
+datab[3] => datab_temp[4].DATAB
+datab[3] => datab_temp[3].DATAB
+datab[3] => datab_temp[3].DATAA
+datab[3] => datab_temp[4].DATAA
+add_sub => datab_temp[4].OUTPUTSELECT
+add_sub => datab_temp[3].OUTPUTSELECT
+add_sub => datab_temp[2].OUTPUTSELECT
+add_sub => datab_temp[1].OUTPUTSELECT
+add_sub => datab_temp[0].OUTPUTSELECT
+add_sub => carry_in_temp.OUTPUTSELECT
+clk => result[0]~reg0.CLK
+clk => result[1]~reg0.CLK
+clk => result[2]~reg0.CLK
+clk => result[3]~reg0.CLK
+cclr => result[0]~reg0.ACLR
+cclr => result[1]~reg0.ACLR
+cclr => result[2]~reg0.ACLR
+cclr => result[3]~reg0.ACLR
+carry_in => carry_in_temp.DATAB
+carry_in => carry_in_temp.DATAA
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= ci_temp.DB_MAX_OUTPUT_PORT_TYPE
+result[0] <= result[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

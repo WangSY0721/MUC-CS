@@ -1,0 +1,39 @@
+|lab2_LookaheadCarry
+a[0] => g0.IN0
+a[0] => p0.IN0
+a[1] => g1.IN0
+a[1] => p1.IN0
+a[2] => g2.IN0
+a[2] => p2.IN0
+a[3] => g3.IN0
+a[3] => p3.IN0
+b[0] => g0.IN1
+b[0] => p0.IN1
+b[1] => g1.IN1
+b[1] => p1.IN1
+b[2] => g2.IN1
+b[2] => p2.IN1
+b[3] => g3.IN1
+b[3] => p3.IN1
+c0 => c4.IN1
+c0 => sum0.IN1
+clk => carry_out~reg0.CLK
+clk => sum[0]~reg0.CLK
+clk => sum[1]~reg0.CLK
+clk => sum[2]~reg0.CLK
+clk => sum[3]~reg0.CLK
+clk => overflow~reg0.CLK
+cclr => carry_out~reg0.ACLR
+cclr => sum[0]~reg0.ACLR
+cclr => sum[1]~reg0.ACLR
+cclr => sum[2]~reg0.ACLR
+cclr => sum[3]~reg0.ACLR
+cclr => overflow~reg0.ENA
+carry_out <= carry_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sum[0] <= sum[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= sum[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= sum[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= sum[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,10 @@
+module Mux(
+	input [31:0] DataA,DataB,
+	input sign,
+	output wire[31:0] OData
+);
+
+//1表示选中信号A，否则则选中信号B
+assign OData=sign?DataA:DataB;
+endmodule 
+

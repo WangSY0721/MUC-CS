@@ -1,0 +1,142 @@
+# Reading C:/altera/10.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do lab2_LookaheadCarry_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\10.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\10.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {lab2_LookaheadCarry.vo}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_LookaheadCarry
+# 
+# Top level modules:
+# 	lab2_LookaheadCarry
+# 
+# vlog -vlog01compat -work work +incdir+E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim {E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry.vt}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_LookaheadCarry_vlg_tst
+# 
+# Top level modules:
+# 	lab2_LookaheadCarry_vlg_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" lab2_LookaheadCarry_vlg_tst
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps lab2_LookaheadCarry_vlg_tst 
+# WARNING: No extended dataflow License exists
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run -all
+vlog -reportprogress 300 -work work E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry.vt
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_LookaheadCarry_vlg_tst
+# 
+# Top level modules:
+# 	lab2_LookaheadCarry_vlg_tst
+vlog -reportprogress 300 -work work E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry.vt
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_LookaheadCarry_vlg_tst
+# 
+# Top level modules:
+# 	lab2_LookaheadCarry_vlg_tst
+# Break key hit 
+# Break in Module lab2_LookaheadCarry_vlg_tst at E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry.vt line 65
+# Simulation Breakpoint: Break in Module lab2_LookaheadCarry_vlg_tst at E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry.vt line 65
+# MACRO ./lab2_LookaheadCarry_run_msim_gate_verilog.do PAUSED at line 17
+vlog -reportprogress 300 -work work E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry.vt
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_LookaheadCarry_vlg_tst
+# 
+# Top level modules:
+# 	lab2_LookaheadCarry_vlg_tst
+vlog -reportprogress 300 -work work E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry.vt
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_LookaheadCarry_vlg_tst
+# 
+# Top level modules:
+# 	lab2_LookaheadCarry_vlg_tst
+do E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry_run_msim_gate_verilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {lab2_LookaheadCarry.vo}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_LookaheadCarry
+# 
+# Top level modules:
+# 	lab2_LookaheadCarry
+# 
+# vlog -vlog01compat -work work +incdir+E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim {E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry.vt}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_LookaheadCarry_vlg_tst
+# 
+# Top level modules:
+# 	lab2_LookaheadCarry_vlg_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" lab2_LookaheadCarry_vlg_tst
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps lab2_LookaheadCarry_vlg_tst 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run -all
+# Break key hit 
+# Break in Module cycloneive_clkctrl in file C:/altera/10.0/modelsim_ase/win32aloem/../altera/verilog/src/cycloneive_atoms.v
+# Simulation Breakpoint: Break in Module cycloneive_clkctrl in file C:/altera/10.0/modelsim_ase/win32aloem/../altera/verilog/src/cycloneive_atoms.v
+# MACRO E:\Quartus_Projects\lab2_LookaheadCarry\simulation\modelsim\lab2_LookaheadCarry_run_msim_gate_verilog.do PAUSED at line 17
+vlog -reportprogress 300 -work work E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry.vt
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_LookaheadCarry_vlg_tst
+# 
+# Top level modules:
+# 	lab2_LookaheadCarry_vlg_tst
+do E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry_run_msim_gate_verilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {lab2_LookaheadCarry.vo}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_LookaheadCarry
+# 
+# Top level modules:
+# 	lab2_LookaheadCarry
+# 
+# vlog -vlog01compat -work work +incdir+E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim {E:/Quartus_Projects/lab2_LookaheadCarry/simulation/modelsim/lab2_LookaheadCarry.vt}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_LookaheadCarry_vlg_tst
+# 
+# Top level modules:
+# 	lab2_LookaheadCarry_vlg_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" lab2_LookaheadCarry_vlg_tst
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps lab2_LookaheadCarry_vlg_tst 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run -all
+# Break key hit 
+# Simulation stop requested.
+# Simulation Breakpoint: Simulation stop requested.
+# MACRO E:\Quartus_Projects\lab2_LookaheadCarry\simulation\modelsim\lab2_LookaheadCarry_run_msim_gate_verilog.do PAUSED at line 17

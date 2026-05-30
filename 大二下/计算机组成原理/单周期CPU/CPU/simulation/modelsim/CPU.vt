@@ -1,0 +1,70 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "12/23/2022 18:58:52"
+                                                                                
+// Verilog Test Bench template for design : CPU
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module CPU_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg clk;
+reg [7:0] RandomNumber;
+reg reset;
+// wires                                               
+wire [6:0]  out1;
+wire [6:0]  out2;
+wire [6:0]  out3;
+wire [6:0]  out4;
+wire [6:0]  out5;
+wire [6:0]  out6;
+wire [6:0]  out7;
+wire [6:0]  out8;
+
+// assign statements (if any)                          
+CPU i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.out1(out1),
+	.out2(out2),
+	.out3(out3),
+	.out4(out4),
+	.out5(out5),
+	.out6(out6),
+	.out7(out7),
+	.out8(out8),
+	.RandomNumber(RandomNumber),
+	.reset(reset)
+);
+always #2 clk=~clk; 
+initial
+begin
+clk=0;reset=1;reset=0;RandomNumber=8'b00000101;
+//m=32'b00000000000000000000000000000101;
+#80 reset=0;
+#20 reset=1;                                                                                                   
+end                                                    
+endmodule

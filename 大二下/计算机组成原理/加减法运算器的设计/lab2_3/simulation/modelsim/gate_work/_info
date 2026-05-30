@@ -1,0 +1,34 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Quartus_Projects\lab2_3\simulation\modelsim
+vlab2_3
+IY>Z@QQ828FHWTfl:8:1=X3
+VoI=_9ZeEXR<ohLdeR^0AY2
+w1525261146
+8lab2_3.vo
+Flab2_3.vo
+L0 31
+Z1 OV;L;6.5e;42
+r1
+31
+o-vlog01compat -work work -O0
+!s100 doC3BW6CSCRZW2EHNZIKc1
+!s85 0
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vlab2_3_vlg_tst
+!s100 TodH1CkjSNE8I[47Bf2^Z3
+I5:h2:RMB@hGH^77WnT>2G1
+VdElk?JbfFm1F1K6^@cg562
+w1525261215
+8E:/Quartus_Projects/lab2_3/simulation/modelsim/lab2_3.vt
+FE:/Quartus_Projects/lab2_3/simulation/modelsim/lab2_3.vt
+L0 28
+R1
+r1
+!s85 0
+31
+!s101 -O0
+o-work work -O0

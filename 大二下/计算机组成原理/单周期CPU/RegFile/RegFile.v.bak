@@ -1,0 +1,41 @@
+module RegFile(
+	input clock,
+	input reset,
+	input rg_w,
+	input ra_w,
+	input show,
+	input [4:0] rs_addr,
+	input [4:0] rt_addr,
+	input [4:0] waddr,
+	input [31:0] wdata,
+	input [31:0] ra_data,
+	output [31:0] rs_data,
+	output [31:0] rt_data,
+	output [31:0] ra_data,
+	output [31:0] show_data
+);
+reg[31:0] reg_array[31:0];
+integer i;
+initial
+	begin
+		for(i=0;i<32;i=i+1)
+			begin
+				if(i==29)
+					reg_array[i]=8192;
+				else
+					reg_array[i]=0;
+			end
+end
+always @ (posedge clock or negedge reset)
+begin
+	if(!reset)
+		begin
+	else
+		if(rg_w)
+			begin
+end
+assign show_data=show ? reg_data[4]:0;
+assign rs_data=reg_array[rs_addr];
+assign rt_data=reg_array[rt_addr];
+assign ra_out=reg_array[31];
+endmodule

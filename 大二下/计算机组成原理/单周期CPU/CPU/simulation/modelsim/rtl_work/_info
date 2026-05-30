@@ -1,0 +1,340 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/altera/Compute/lab6/CPU/simulation/modelsim
+vAdd
+Z1 !s110 1671793332
+!i10b 1
+!s100 Ra>gDBM7`ZGg^mNV:fa<i2
+InYkc[CN>VGO?MJ:kIFkfH0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1671790688
+8D:/altera/Compute/lab6/CPU/add.v
+FD:/altera/Compute/lab6/CPU/add.v
+L0 1
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1671793332.222000
+!s107 D:/altera/Compute/lab6/CPU/add.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/add.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU
+n@add
+vALU
+Z6 !s110 1671793331
+!i10b 1
+!s100 fl7>D5P;e2@aGn:YbANZ>2
+Inafgkz5^5?2PLiajokMRj1
+R2
+R0
+w1671781029
+8D:/altera/Compute/lab6/CPU/alu.v
+FD:/altera/Compute/lab6/CPU/alu.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793331.924000
+!s107 D:/altera/Compute/lab6/CPU/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/alu.v|
+!i113 1
+R4
+R5
+n@a@l@u
+vControl
+R6
+!i10b 1
+!s100 EY<ZbO@;66UeElKbIkZ@G0
+I?f=dOGAG_<gQ>I45WGNm52
+R2
+R0
+w1671780834
+8D:/altera/Compute/lab6/CPU/control.v
+FD:/altera/Compute/lab6/CPU/control.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793331.134000
+!s107 D:/altera/Compute/lab6/CPU/control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/control.v|
+!i113 1
+R4
+R5
+n@control
+vCPU_vlg_tst
+R1
+!i10b 1
+!s100 aI05YCeRP5UlibzR1mHLz2
+Ic4W>d31D_aFCG<chCojSn0
+R2
+R0
+w1671793250
+8D:/altera/Compute/lab6/CPU/simulation/modelsim/CPU.vt
+FD:/altera/Compute/lab6/CPU/simulation/modelsim/CPU.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1671793332.952000
+!s107 D:/altera/Compute/lab6/CPU/simulation/modelsim/CPU.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU/simulation/modelsim|D:/altera/Compute/lab6/CPU/simulation/modelsim/CPU.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/altera/Compute/lab6/CPU/simulation/modelsim
+n@c@p@u_vlg_tst
+vInmediateExtend
+R1
+!i10b 1
+!s100 ke@KNhaa_4OXZAzKTcD4Q3
+IFfbiGDdghn=IYR7815d[d3
+R2
+R0
+w1671780665
+8D:/altera/Compute/lab6/CPU/inmediateextend.v
+FD:/altera/Compute/lab6/CPU/inmediateextend.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793332.072000
+!s107 D:/altera/Compute/lab6/CPU/inmediateextend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/inmediateextend.v|
+!i113 1
+R4
+R5
+n@inmediate@extend
+vInputData
+R1
+!i10b 1
+!s100 @G_C`Qbb8?K;6GU@GYcWR1
+IG_VU>Wa2HTFGLE=OHQJLO2
+R2
+R0
+w1671780366
+8D:/altera/Compute/lab6/CPU/inputdata.v
+FD:/altera/Compute/lab6/CPU/inputdata.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793332.811000
+!s107 D:/altera/Compute/lab6/CPU/inputdata.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/inputdata.v|
+!i113 1
+R4
+R5
+n@input@data
+vInputExtend
+R1
+!i10b 1
+!s100 <@^N81`dhAfdfQI=D49FE1
+IiU9iOCLf[bL5BdkzORXLf3
+R2
+R0
+w1671782554
+8D:/altera/Compute/lab6/CPU/inputextend.v
+FD:/altera/Compute/lab6/CPU/inputextend.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793332.671000
+!s107 D:/altera/Compute/lab6/CPU/inputextend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/inputextend.v|
+!i113 1
+R4
+R5
+n@input@extend
+vInsMem
+R6
+!i10b 1
+!s100 MTgNjbZ2VNl]EZmWX6V_W0
+IETgSH;^_S]kaMV]oVC75L1
+R2
+R0
+w1671781669
+8D:/altera/Compute/lab6/CPU/insmem.v
+FD:/altera/Compute/lab6/CPU/insmem.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793331.452000
+!s107 D:/altera/Compute/lab6/CPU/insmem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/insmem.v|
+!i113 1
+R4
+R5
+n@ins@mem
+vInstructionSlice
+R6
+!i10b 1
+!s100 e<2z@8gz>@l;kfC1?P:fA3
+IU>nHHl9XofkXBbXoTB[C40
+R2
+R0
+w1671788757
+8D:/altera/Compute/lab6/CPU/instructionslice.v
+FD:/altera/Compute/lab6/CPU/instructionslice.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793331.292000
+!s107 D:/altera/Compute/lab6/CPU/instructionslice.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/instructionslice.v|
+!i113 1
+R4
+R5
+n@instruction@slice
+vLeft
+R1
+!i10b 1
+!s100 Bm4PT_A8nIz:adK85A>3J0
+I<R1>M^eZ[]Vh6UCh86:WZ1
+R2
+R0
+w1621479310
+8D:/altera/Compute/lab6/CPU/left.v
+FD:/altera/Compute/lab6/CPU/left.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793332.358000
+!s107 D:/altera/Compute/lab6/CPU/left.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/left.v|
+!i113 1
+R4
+R5
+n@left
+vMux
+R6
+!i10b 1
+!s100 `Uke:bln`bI6A;d>9bjP:1
+IRnGcY[HbWz:=ika?AR5ej3
+R2
+R0
+w1671787982
+8D:/altera/Compute/lab6/CPU/mux.v
+FD:/altera/Compute/lab6/CPU/mux.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793331.777000
+!s107 D:/altera/Compute/lab6/CPU/mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/mux.v|
+!i113 1
+R4
+R5
+n@mux
+vMux4
+R1
+!i10b 1
+!s100 lLE=L0GIHV?47nhd=7`PG0
+IgzdbNnFMe9_2^O[7o@W?f2
+R2
+R0
+w1671788173
+8D:/altera/Compute/lab6/CPU/mux4.v
+FD:/altera/Compute/lab6/CPU/mux4.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793332.514000
+!s107 D:/altera/Compute/lab6/CPU/mux4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/mux4.v|
+!i113 1
+R4
+R5
+n@mux4
+vPC
+R6
+!i10b 1
+!s100 F9ekoJofc`3nD^8j1QX4I2
+I@G4LHHiWVA@_mVPP[EnB<0
+R2
+R0
+w1671781241
+8D:/altera/Compute/lab6/CPU/pc.v
+FD:/altera/Compute/lab6/CPU/pc.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793331.622000
+!s107 D:/altera/Compute/lab6/CPU/pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/pc.v|
+!i113 1
+R4
+R5
+n@p@c
+vRegFile
+R6
+!i10b 1
+!s100 003lT8AD6^5OZTlRh2@FO3
+IaD<ef_;B^BGnkGeKj1Zz20
+R2
+R0
+w1671780026
+8D:/altera/Compute/lab6/CPU/regfile.v
+FD:/altera/Compute/lab6/CPU/regfile.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793330.956000
+!s107 D:/altera/Compute/lab6/CPU/regfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/regfile.v|
+!i113 1
+R4
+R5
+n@reg@file
+vResult
+!s110 1671793330
+!i10b 1
+!s100 n<DbbZF_e0lHnPZ]6<Xh[2
+IJmO][ID_Wo_F6zb5[c>>U1
+R2
+R0
+w1671782274
+8D:/altera/Compute/lab6/CPU/result.v
+FD:/altera/Compute/lab6/CPU/result.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1671793330.723000
+!s107 D:/altera/Compute/lab6/CPU/result.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/Compute/lab6/CPU|D:/altera/Compute/lab6/CPU/result.v|
+!i113 1
+R4
+R5
+n@result

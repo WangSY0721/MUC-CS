@@ -1,0 +1,40 @@
+# Reading C:/altera/10.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do lab2_4_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\10.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\10.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {lab2_4.vo}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_4
+# 
+# Top level modules:
+# 	lab2_4
+# 
+# vlog -vlog01compat -work work +incdir+E:/Quartus_Projects/lab2_4/simulation/modelsim {E:/Quartus_Projects/lab2_4/simulation/modelsim/lab2_4.vt}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module lab2_4_vlg_tst
+# 
+# Top level modules:
+# 	lab2_4_vlg_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" lab2_4_vlg_tst
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps lab2_4_vlg_tst 
+# WARNING: No extended dataflow License exists
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run -all
+# Break key hit 
+# Break in Module cycloneive_mux41 at C:/altera/10.0/modelsim_ase/win32aloem/../altera/verilog/src/cycloneive_atoms.v line 342
+# Simulation Breakpoint: Break in Module cycloneive_mux41 at C:/altera/10.0/modelsim_ase/win32aloem/../altera/verilog/src/cycloneive_atoms.v line 342
+# MACRO ./lab2_4_run_msim_gate_verilog.do PAUSED at line 17

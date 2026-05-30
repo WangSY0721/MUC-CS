@@ -1,0 +1,10 @@
+of: 2
+hamlet: 2
+the: 1
+tragedy: 1
+prince: 1
+shakespeare: 1
+homepage: 1
+entire: 1
+play: 1
+i: 1
