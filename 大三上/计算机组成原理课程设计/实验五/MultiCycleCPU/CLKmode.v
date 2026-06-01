@@ -1,0 +1,15 @@
+`timescale 1ns/1ps
+module CLKmode(
+input CLK1,
+output reg CLK
+);
+initial
+begin
+CLK=0;
+end
+always @(posedge CLK1)
+begin
+
+CLK=~CLK;
+end
+endmodule

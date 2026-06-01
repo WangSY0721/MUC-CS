@@ -1,0 +1,393 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do MultiCycleCPU_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/MultiCycleCPU.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:18 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/MultiCycleCPU.v 
+# -- Compiling module MultiCycleCPU
+# 
+# Top level modules:
+# 	MultiCycleCPU
+# End time: 12:59:18 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/div_20.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:18 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/div_20.v 
+# -- Compiling module div_20
+# 
+# Top level modules:
+# 	div_20
+# End time: 12:59:18 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/SignZeroExtend.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:18 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/SignZeroExtend.v 
+# -- Compiling module SignZeroExtend
+# 
+# Top level modules:
+# 	SignZeroExtend
+# End time: 12:59:18 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/show.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:18 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/show.v 
+# -- Compiling module show
+# 
+# Top level modules:
+# 	show
+# End time: 12:59:18 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/RegisterFile.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:19 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/RegisterFile.v 
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# End time: 12:59:19 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/PCAddr.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:19 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/PCAddr.v 
+# -- Compiling module PCAddr
+# 
+# Top level modules:
+# 	PCAddr
+# End time: 12:59:19 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/PC.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:19 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/PC.v 
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# End time: 12:59:19 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/InstructionCut.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:20 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/InstructionCut.v 
+# -- Compiling module InstructionCut
+# 
+# Top level modules:
+# 	InstructionCut
+# End time: 12:59:20 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/ControlUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:20 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/ControlUnit.v 
+# -- Compiling module ControlUnit
+# ** Warning: D:/MultiCycleCPU/ControlUnit.v(79): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: D:/MultiCycleCPU/ControlUnit.v(83): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: D:/MultiCycleCPU/ControlUnit.v(122): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: D:/MultiCycleCPU/ControlUnit.v(161): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: D:/MultiCycleCPU/ControlUnit.v(162): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: D:/MultiCycleCPU/ControlUnit.v(163): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: D:/MultiCycleCPU/ControlUnit.v(164): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	ControlUnit
+# End time: 12:59:20 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 7
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:20 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:59:20 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/CLKmode.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:20 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/CLKmode.v 
+# -- Compiling module CLKmode
+# 
+# Top level modules:
+# 	CLKmode
+# End time: 12:59:20 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/IO.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:21 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/IO.v 
+# -- Compiling module IO
+# 
+# Top level modules:
+# 	IO
+# End time: 12:59:21 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU {D:/MultiCycleCPU/totalmem.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:21 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU" D:/MultiCycleCPU/totalmem.v 
+# -- Compiling module totalMEM
+# 
+# Top level modules:
+# 	totalMEM
+# End time: 12:59:21 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/MultiCycleCPU/simulation/modelsim0 {D:/MultiCycleCPU/simulation/modelsim0/MultiCycleCPU.vt}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:21 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MultiCycleCPU/simulation/modelsim0" D:/MultiCycleCPU/simulation/modelsim0/MultiCycleCPU.vt 
+# -- Compiling module MultiCycleCPU_vlg_tst
+# 
+# Top level modules:
+# 	MultiCycleCPU_vlg_tst
+# End time: 12:59:21 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  MultiCycleCPU_vlg_tst
+# vsim -gui "+altera" -l msim_transcript -do "MultiCycleCPU_run_msim_rtl_verilog.do" 
+# Start time: 12:59:22 on Dec 24,2024
+# Loading work.MultiCycleCPU_vlg_tst
+# Loading work.MultiCycleCPU
+# Loading work.CLKmode
+# Loading work.div_20
+# Loading work.PC
+# Loading work.totalMEM
+# Loading work.InstructionCut
+# Loading work.ControlUnit
+# Loading work.RegisterFile
+# Loading work.ALU
+# Loading work.PCAddr
+# Loading work.SignZeroExtend
+# Loading work.IO
+# Loading work.show
+# ** Warning: (vsim-3017) D:/MultiCycleCPU/simulation/modelsim0/MultiCycleCPU.vt(51): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /MultiCycleCPU_vlg_tst/i1
+# ** Warning: (vsim-3722) D:/MultiCycleCPU/simulation/modelsim0/MultiCycleCPU.vt(51): [TFMPC] - Missing connection for port 'clk2'.
+# 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 2000 ps
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# 1
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# 1
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# 1
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# 1
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# 1
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# 1
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# 1
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# 1
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# 1
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# 1
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# 0
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# mwr: 0 ram[12]: 00cc000000 ram[13]: 00f8000000 ram[14]: 0000000000 ram[15]: 0000000000
+# End time: 14:50:58 on Dec 24,2024, Elapsed time: 1:51:36
+# Errors: 0, Warnings: 2

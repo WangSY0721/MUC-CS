@@ -1,0 +1,86 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "12/14/2021 20:46:42"
+                                                                                
+// Verilog Test Bench template for design : MultiCycleCPU
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module MultiCycleCPU_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg CLK1;
+reg Reset;
+reg en;
+reg halt;
+reg [3:0] x;
+// wires                                               
+wire [6:0]  out1;
+wire [6:0]  out2;
+wire [6:0]  out3;
+wire [6:0]  out4;
+wire [6:0]  out5;
+wire [6:0]  out6;
+wire [6:0]  out7;
+wire [6:0]  out8;
+wire [31:0]  result;
+
+// assign statements (if any)                          
+MultiCycleCPU i1 (
+// port map - connection between master ports and signals/registers   
+	.CLK1(CLK1),
+	.Reset(Reset),
+	.en(en),
+	.halt(halt),
+	.out1(out1),
+	.out2(out2),
+	.out3(out3),
+	.out4(out4),
+	.out5(out5),
+	.out6(out6),
+	.out7(out7),
+	.out8(out8),
+	.result(result),
+	.x(x)
+);
+initial                                                
+begin   
+halt=0;                                               
+CLK1=0;
+Reset=1;
+en=1;
+#1 Reset=0;
+#3 en=0;
+#5 Reset=1;
+      x=4'b0110;
+#70 halt=1;
+#1 halt=0;  
+end
+always
+begin
+#1 CLK1=~CLK1; 
+end                                                                                 
+endmodule
+

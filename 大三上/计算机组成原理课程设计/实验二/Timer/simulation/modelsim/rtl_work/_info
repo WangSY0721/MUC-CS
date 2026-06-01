@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Quartus/newlab2/Timer/Timer/simulation/modelsim
+vTimer
+Z1 !s110 1704121215
+!i10b 1
+!s100 3Qg`Dgd7HWe_bgHFQ<Y`53
+I>H8ifnWPF5APd^Z:gmThS2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1702462237
+8D:/Quartus/newlab2/Timer/Timer/Timer.v
+FD:/Quartus/newlab2/Timer/Timer/Timer.v
+L0 1
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1704121215.108000
+!s107 D:/Quartus/newlab2/Timer/Timer/Timer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/newlab2/Timer/Timer|D:/Quartus/newlab2/Timer/Timer/Timer.v|
+!i113 1
+Z4 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/Quartus/newlab2/Timer/Timer
+n@timer
+vTimer_vlg_tst
+R1
+!i10b 1
+!s100 ^2W664?NRSGd<ID<]^5B01
+IFNU_K`]:gm^IF9RVb0aN30
+R2
+R0
+w1702461802
+8D:/Quartus/newlab2/Timer/Timer/simulation/modelsim/Timer.vt
+FD:/Quartus/newlab2/Timer/Timer/simulation/modelsim/Timer.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1704121215.173000
+!s107 D:/Quartus/newlab2/Timer/Timer/simulation/modelsim/Timer.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/newlab2/Timer/Timer/simulation/modelsim|D:/Quartus/newlab2/Timer/Timer/simulation/modelsim/Timer.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/Quartus/newlab2/Timer/Timer/simulation/modelsim
+n@timer_vlg_tst

@@ -1,0 +1,297 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do MultiCycleCPU_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/ROM1P.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ROM1P
+# 
+# Top level modules:
+# 	ROM1P
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/MultiCycleCPU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MultiCycleCPU
+# 
+# Top level modules:
+# 	MultiCycleCPU
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/div_20.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module div_20
+# 
+# Top level modules:
+# 	div_20
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/SignZeroExtend.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SignZeroExtend
+# 
+# Top level modules:
+# 	SignZeroExtend
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/show.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module show
+# 
+# Top level modules:
+# 	show
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/RegisterFile.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/PCAddr.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PCAddr
+# 
+# Top level modules:
+# 	PCAddr
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/PC.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/InstructionCut.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module InstructionCut
+# 
+# Top level modules:
+# 	InstructionCut
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/InsMEM.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module InsMEM
+# 
+# Top level modules:
+# 	InsMEM
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/DataMEM.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DataMEM
+# 
+# Top level modules:
+# 	DataMEM
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/ControlUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ControlUnit
+# ** Warning: G:/altrea_pll/MultiCycleCPU/ControlUnit.v(134): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	ControlUnit
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/CLKmode.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CLKmode
+# 
+# Top level modules:
+# 	CLKmode
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU {G:/altrea_pll/MultiCycleCPU/IO.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IO
+# 
+# Top level modules:
+# 	IO
+# 
+# vlog -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU/simulation/modelsim0 {G:/altrea_pll/MultiCycleCPU/simulation/modelsim0/MultiCycleCPU.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MultiCycleCPU_vlg_tst
+# 
+# Top level modules:
+# 	MultiCycleCPU_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  MultiCycleCPU_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps MultiCycleCPU_vlg_tst 
+# Loading work.MultiCycleCPU_vlg_tst
+# Loading work.MultiCycleCPU
+# Loading work.CLKmode
+# Loading work.div_20
+# Loading work.PC
+# Loading work.InsMEM
+# Loading work.ROM1P
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.InstructionCut
+# Loading work.ControlUnit
+# Loading work.RegisterFile
+# Loading work.ALU
+# Loading work.PCAddr
+# Loading work.DataMEM
+# Loading work.SignZeroExtend
+# Loading work.IO
+# Loading work.show
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 2000 ps
+# 0
+# 0
+# 0
+# 0
+# 0
+# 0
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+add wave -position end  sim:/MultiCycleCPU_vlg_tst/i1/pc/CLK
+add wave -position end  sim:/MultiCycleCPU_vlg_tst/i1/pc/PCSrc
+add wave -position end  sim:/MultiCycleCPU_vlg_tst/i1/pc/nextPC
+add wave -position end  sim:/MultiCycleCPU_vlg_tst/i1/pc/curPC
+add wave -position end  sim:/MultiCycleCPU_vlg_tst/i1/InsMEM/IAddr
+add wave -position end  sim:/MultiCycleCPU_vlg_tst/i1/InsMEM/InsMemRW
+add wave -position end  sim:/MultiCycleCPU_vlg_tst/i1/InsMEM/CLK
+add wave -position end  sim:/MultiCycleCPU_vlg_tst/i1/InsMEM/InPut
+add wave -position end  sim:/MultiCycleCPU_vlg_tst/i1/InsMEM/whether_input
+add wave -position end  sim:/MultiCycleCPU_vlg_tst/i1/InsMEM/IDataOut
+add wave -position end  sim:/MultiCycleCPU_vlg_tst/i1/InsMEM/rom_data
+restart
+run
+# 0
+# 0
+# 0
+# 0
+# 0
+run
+# 0
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+run
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+run
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+run
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+run
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+run
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+run
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+run
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+run
+# 0
+# 1
+# 0
+run

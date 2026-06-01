@@ -1,0 +1,47 @@
+|Multiplier
+clk => states[0]~reg0.CLK
+clk => states[1]~reg0.CLK
+clk => states[2]~reg0.CLK
+clk => state~6.DATAIN
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+start => state.DATAB
+start => Selector0.IN3
+start => state.OUTPUTSELECT
+start => state.OUTPUTSELECT
+start => state.OUTPUTSELECT
+start => state.OUTPUTSELECT
+start => state.OUTPUTSELECT
+start => Selector1.IN2
+start => Selector0.IN1
+x[0] => rx[0].DATAIN
+x[1] => rx[1].DATAIN
+x[2] => rx[2].DATAIN
+x[3] => rx[3].DATAIN
+y[0] => p.DATAB
+y[1] => p.DATAB
+y[2] => p.DATAB
+y[3] => p.DATAB
+p[0] <= p[0].DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= p.DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= p.DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= p.DB_MAX_OUTPUT_PORT_TYPE
+p[4] <= p[4].DB_MAX_OUTPUT_PORT_TYPE
+p[5] <= p[5].DB_MAX_OUTPUT_PORT_TYPE
+p[6] <= p[6].DB_MAX_OUTPUT_PORT_TYPE
+p[7] <= p[7].DB_MAX_OUTPUT_PORT_TYPE
+p[8] <= <GND>
+temp[0] <= temp.DB_MAX_OUTPUT_PORT_TYPE
+temp[1] <= temp.DB_MAX_OUTPUT_PORT_TYPE
+temp[2] <= temp.DB_MAX_OUTPUT_PORT_TYPE
+temp[3] <= temp.DB_MAX_OUTPUT_PORT_TYPE
+temp[4] <= temp.DB_MAX_OUTPUT_PORT_TYPE
+states[0] <= states[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+states[1] <= states[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+states[2] <= states[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+done <= done$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

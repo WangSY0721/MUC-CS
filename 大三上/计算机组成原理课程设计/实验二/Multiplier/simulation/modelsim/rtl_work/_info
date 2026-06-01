@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Quartus/newlab2/Multiplier/Multiplier/simulation/modelsim
+vMultiplier
+Z1 !s110 1704121270
+!i10b 1
+!s100 j;KFUd1NNJRHMU^K69CfW2
+I=fP]2SmF@8zFQPBI6=0:U1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1699431591
+8D:/Quartus/newlab2/Multiplier/Multiplier/Multiplier.v
+FD:/Quartus/newlab2/Multiplier/Multiplier/Multiplier.v
+L0 1
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1704121270.659000
+!s107 D:/Quartus/newlab2/Multiplier/Multiplier/Multiplier.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/newlab2/Multiplier/Multiplier|D:/Quartus/newlab2/Multiplier/Multiplier/Multiplier.v|
+!i113 1
+Z4 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/Quartus/newlab2/Multiplier/Multiplier
+n@multiplier
+vMultiplier_vlg_tst
+R1
+!i10b 1
+!s100 AhXm^0lk0zC]Kdm1J1]1l3
+ILVdee`bP265o[:A:G=4`62
+R2
+R0
+w1699432438
+8D:/Quartus/newlab2/Multiplier/Multiplier/simulation/modelsim/Multiplier.vt
+FD:/Quartus/newlab2/Multiplier/Multiplier/simulation/modelsim/Multiplier.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1704121270.725000
+!s107 D:/Quartus/newlab2/Multiplier/Multiplier/simulation/modelsim/Multiplier.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/newlab2/Multiplier/Multiplier/simulation/modelsim|D:/Quartus/newlab2/Multiplier/Multiplier/simulation/modelsim/Multiplier.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/Quartus/newlab2/Multiplier/Multiplier/simulation/modelsim
+n@multiplier_vlg_tst

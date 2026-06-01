@@ -1,0 +1,270 @@
+# Reading D:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do MultiCycleCPU_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/MultiCycleCPU.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:08:59 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/MultiCycleCPU.v 
+# -- Compiling module MultiCycleCPU
+# 
+# Top level modules:
+# 	MultiCycleCPU
+# End time: 21:08:59 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/div_20.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:08:59 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/div_20.v 
+# -- Compiling module div_20
+# 
+# Top level modules:
+# 	div_20
+# End time: 21:08:59 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/SignZeroExtend.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:08:59 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/SignZeroExtend.v 
+# -- Compiling module SignZeroExtend
+# 
+# Top level modules:
+# 	SignZeroExtend
+# End time: 21:08:59 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/show.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:08:59 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/show.v 
+# -- Compiling module show
+# 
+# Top level modules:
+# 	show
+# End time: 21:08:59 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/RegisterFile.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:08:59 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/RegisterFile.v 
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# End time: 21:08:59 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/PCAddr.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:08:59 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/PCAddr.v 
+# -- Compiling module PCAddr
+# 
+# Top level modules:
+# 	PCAddr
+# End time: 21:08:59 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/PC.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:09:00 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/PC.v 
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# End time: 21:09:00 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/InstructionCut.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:09:00 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/InstructionCut.v 
+# -- Compiling module InstructionCut
+# 
+# Top level modules:
+# 	InstructionCut
+# End time: 21:09:00 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/DataMEM.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:09:00 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/DataMEM.v 
+# -- Compiling module DataMEM
+# 
+# Top level modules:
+# 	DataMEM
+# End time: 21:09:00 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/ControlUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:09:00 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/ControlUnit.v 
+# -- Compiling module ControlUnit
+# ** Warning: D:/altera/15.0/MultiCycleCPU/ControlUnit.v(134): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	ControlUnit
+# End time: 21:09:00 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:09:00 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 21:09:00 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/CLKmode.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:09:01 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/CLKmode.v 
+# -- Compiling module CLKmode
+# 
+# Top level modules:
+# 	CLKmode
+# End time: 21:09:01 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/IO.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:09:01 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/IO.v 
+# -- Compiling module IO
+# 
+# Top level modules:
+# 	IO
+# End time: 21:09:01 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU {D:/altera/15.0/MultiCycleCPU/InsMEM.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:09:01 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU" D:/altera/15.0/MultiCycleCPU/InsMEM.v 
+# -- Compiling module InsMEM
+# 
+# Top level modules:
+# 	InsMEM
+# End time: 21:09:01 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU/simulation/modelsim {D:/altera/15.0/MultiCycleCPU/simulation/modelsim/MultiCycleCPU.vt}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:09:01 on Dec 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/15.0/MultiCycleCPU/simulation/modelsim" D:/altera/15.0/MultiCycleCPU/simulation/modelsim/MultiCycleCPU.vt 
+# -- Compiling module MultiCycleCPU_vlg_tst
+# 
+# Top level modules:
+# 	MultiCycleCPU_vlg_tst
+# End time: 21:09:01 on Dec 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  MultiCycleCPU_vlg_tst
+# vsim -gui "+altera" -l msim_transcript -do "MultiCycleCPU_run_msim_rtl_verilog.do" 
+# Start time: 21:09:01 on Dec 17,2023
+# Loading work.MultiCycleCPU_vlg_tst
+# Loading work.MultiCycleCPU
+# Loading work.CLKmode
+# Loading work.div_20
+# Loading work.PC
+# Loading work.InsMEM
+# Loading work.InstructionCut
+# Loading work.ControlUnit
+# Loading work.RegisterFile
+# Loading work.ALU
+# Loading work.PCAddr
+# Loading work.DataMEM
+# Loading work.SignZeroExtend
+# Loading work.IO
+# Loading work.show
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: piao  Hostname: DESKTOP-MBJ49G4  ProcessID: 3940
+# 
+#           Attempting to use alternate WLF file "./wlft22i9jv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft22i9jv
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 2000 ps
+# 0
+# 0
+# 0
+# 0
+# 0
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# 0
+# 0
+# 1
+# 0
+# End time: 22:59:35 on Dec 17,2023, Elapsed time: 1:50:34
+# Errors: 0, Warnings: 2

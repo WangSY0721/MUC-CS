@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 7",
+		"os_version" : "6.2"
+	},
+	"error" : {
+		"executable" : "quartus_map",
+		"comment" : "not_applicable",
+		"error_message" : "\nQuartus II requested that Windows modify job info, but Windows could not do so.\nPlease report the full text of this message to Altera so we can investigate its causes.\nIn the meantime, may wish to take the following steps to work around the problem:\n   * Disabled parallel compilation if it is enabled\n   * Ensure you have sufficient memory to run Quartus.\n   * Ensure all service packs and patches from Microsoft are installed\n\nTechnical details:\n   * API: result\n   * OS code: 6 (¾ä±úÎÞÐ§¡£)\n",
+		"source_file" : "/quartus/ccl/thr/thr_process.cpp",
+		"line" : "478",
+		"stack_trace" : "\t0x7ff9778424c8: ccl_thr + 0x24c8 (thr_msleep + 0xc8)\n\t0x7ff977842f1d: ccl_thr + 0x2f1d (thr_thread_wrapper + 0x10d)\n\t0x7ff977841cce: ccl_thr + 0x1cce (thr_process_create_and_save_job + 0x6fe)\n\t0x7ff9693f3e9b: ccl_ipc + 0x3e9b (?run@IPC_COMMAND@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@0_NPEAK01@Z + 0x45b)\n\t0x7ff92f0b67c6: mega_ipcatalog + 0x267c6 (?ip_type_to_string@IPCATALOG_IMPL@@CA?AV?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@W4IP_TYPE@IPCATALOG_CARD@@@Z + 0x186)\n\t0x7ff9779ae31c: CCL_MSG + 0xe31c (?msg_set_stack_size@@YAXH@Z + 0x7c)\n\t0x7ff979b64c0c: ccl_mem + 0x4c0c (?mem_malloc_wrapper@@YAPEAX_KPEAVMEM_TRACKER_THUNK@@PEBD@Z + 0x18c)\n\t0x7ff977842791: ccl_thr + 0x2791 (thr_sleep + 0xb1)\n\t0x7ff99ca27033: KERNEL32 + 0x17033 (BaseThreadInitThunk + 0x13)\n\t0x7ff99d6e2650: ntdll + 0x52650 (RtlUserThreadStart + 0x20)\n",
+		"subsystem" : "THR"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "15.0.0",
+		"build" : "145",
+		"edition" : "Full Version"
+	}
+}

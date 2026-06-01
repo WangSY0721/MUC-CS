@@ -1,0 +1,23 @@
+|Mux2_1_5
+dataA[0] => Odata.DATAB
+dataA[1] => Odata.DATAB
+dataA[2] => Odata.DATAB
+dataA[3] => Odata.DATAB
+dataA[4] => Odata.DATAB
+dataB[0] => Odata.DATAA
+dataB[1] => Odata.DATAA
+dataB[2] => Odata.DATAA
+dataB[3] => Odata.DATAA
+dataB[4] => Odata.DATAA
+sign => Odata.OUTPUTSELECT
+sign => Odata.OUTPUTSELECT
+sign => Odata.OUTPUTSELECT
+sign => Odata.OUTPUTSELECT
+sign => Odata.OUTPUTSELECT
+Odata[0] <= Odata.DB_MAX_OUTPUT_PORT_TYPE
+Odata[1] <= Odata.DB_MAX_OUTPUT_PORT_TYPE
+Odata[2] <= Odata.DB_MAX_OUTPUT_PORT_TYPE
+Odata[3] <= Odata.DB_MAX_OUTPUT_PORT_TYPE
+Odata[4] <= Odata.DB_MAX_OUTPUT_PORT_TYPE
+
+

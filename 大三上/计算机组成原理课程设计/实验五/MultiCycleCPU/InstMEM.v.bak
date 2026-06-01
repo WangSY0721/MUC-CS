@@ -1,0 +1,37 @@
+`timescale 1ns / 1ps
+
+module InsMEM(
+    input [31:0] IAddr,
+    input InsMemRW,
+	 input CLK,
+    input [3:0] InPut,
+    input input_number, 
+    output reg [31:0] IDataOut
+);
+
+wire [31:0] rom_data;           
+
+
+ROM1P ROM (
+    .address(IAddr[6:2]),    
+    .clock(CLK),              
+    .q(rom_data)               
+);
+
+
+
+    
+always @(*) begin
+    if (InsMemRW) begin
+
+		if(IAddr == 'd12) begin
+			IDataOut[31:8] = rom_data[31:8];
+			IDataOut[7:0] = {rom_data[7:4],InPut};
+		end else
+		begin
+		  IDataOut = rom_data;
+		  end
+    end
+end
+
+endmodule

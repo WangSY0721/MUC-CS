@@ -1,0 +1,109 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "11/01/2023 18:19:46"
+                                                                                
+// Verilog Test Bench template for design : ALU_64bit
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module ALU_64bit_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg m;
+reg [63:0] a;
+reg [63:0] b;
+reg c;
+reg [3:0] s;
+// wires                                               
+wire [63:0]  f;
+
+// assign statements (if any)                          
+ALU_64bit i1 (
+// port map - connection between master ports and signals/registers   
+	.M(m),
+	.a(a),
+	.b(b),
+	.c(c),
+	.f(f),
+	.s(s)
+);
+initial                                                
+begin                                                  
+a=16'h0000000000000004;b=16'h0000000000000008;
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin
+s=4'b0000;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b0001;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b0010;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b0011;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b0100;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b0101;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b0110;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b0111;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b1000;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b1001;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b1010;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b1011;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b1100;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b1101;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b1110;;m=1;c=0;
+#10 m=0;
+#10 c=1;
+# 30 s=4'b1111;;m=1;c=0;
+#10 m=0;
+#10 c=1;                                   
+end                                                    
+endmodule

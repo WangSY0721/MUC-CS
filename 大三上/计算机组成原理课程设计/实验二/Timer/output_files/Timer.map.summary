@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Dec 13 18:10:45 2023
+Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Full Version
+Revision Name : Timer
+Top-level Entity Name : Timer
+Family : Cyclone IV E
+Total logic elements : 20
+    Total combinational functions : 20
+    Dedicated logic registers : 14
+Total registers : 14
+Total pins : 21
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

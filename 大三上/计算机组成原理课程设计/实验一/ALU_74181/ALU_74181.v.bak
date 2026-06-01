@@ -1,0 +1,72 @@
+module ALU_74181 (
+input [3:0] a,
+input [3:0] b,
+input [3:0] s,
+input m,
+input cn,
+output [3:0] f,
+output aeqb,
+output c4,
+output p,
+output g
+);
+
+reg [3:0] result;
+wire [4:0] temp;
+wire p0, pl, p2, p3;
+wire g0, g1, g2, g3;
+
+assign temp = {s, m};
+
+always @ (temp or a or b) begin
+case (temp)
+5'b00000: result = a;
+5'b00001: result = !a;
+5'b00010: result = a|b;
+5'b00011: result = (!a) | b;
+5'b00100: result = a|!b;
+5'b00101: result = !a & b;
+5'b00110: result = 4'b1111;
+5'b00111: result = 0;
+5'b01000: result = a+(a&!b);
+5'b01001: result = !(a & b);
+5'b01010: result = !b;
+5'b01011: result = (a|!b) + (a & !b);
+5'b01100: result = a ^ b;
+5'b01101: result = a - b + 4'b1111;
+5'b01110: result = a & (!(b + 4'b1111));
+5'b01111: result = a & !b;
+5'b10000: result = a+a & b;
+5'b10001: result = (!a) | b;
+5'b10010: result = a + b;
+5'b10011: result = !(a ^ b);
+5'b10100: result = (a | !b) + (a & b);
+5'b10101: result = b;
+5'b10110: result = a & b + 4'b1111;
+5'b10111: result = a & b;
+5'b11000: result = a+a;
+5'b11001: result = 1;
+5'b11010: result = (a | b)+a;
+5'b11011: result = (a | !b);
+5'b11100: result = (a | !b) + a;
+5'b11101: result = a | b;
+5'b11110: result = a + 4'b1111;
+5'b11111: result = a;
+endcase
+assign f = result;
+
+assign g0 = a[0] & b[0];
+assign gl = a[1] & b[1];
+assign g2 = a[2] & b[0];
+assign g3 = a[3] & b[0];
+assign p0 = a[0] ^ b[0];
+assign pi = a[1] ^ b[1];
+assign p2 = a[2] ^ b[2];
+assign p3 = a[3] ^ b[3];
+
+assign c4 = g3 | (g2 & p3) | (g1 & p2 & p3) | (g0 & p0 & p1 & p2) | (cn & p0 & pi & g2 & p3);
+assign p = p0 & p1 & p2 & p3;
+assign g = g3 + g2 & p3 + gl & p2 & p3 + g0 & pl & p2 & p3;
+assign aeqb = (a == b) ? 1'b1 : 1'b0;
+
+endmodule

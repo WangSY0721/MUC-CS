@@ -1,0 +1,7 @@
+module DataMem(
+	input clk,
+	input Wren,
+	input [31:0] Daddr,
+	input [31:0] Data,
+	output reg [31:0] Mout
+);

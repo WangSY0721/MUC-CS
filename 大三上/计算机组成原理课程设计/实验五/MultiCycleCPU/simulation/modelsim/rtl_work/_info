@@ -1,0 +1,338 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/altera/15.0/MultiCycleCPU/simulation/modelsim
+vALU
+Z1 !s110 1702818540
+!i10b 1
+!s100 _8akf]A:dl2>8PjTKTif81
+IzZ`2OX9bJ]XQN0YoG0f7>1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1702396215
+8D:/altera/15.0/MultiCycleCPU/ALU.v
+FD:/altera/15.0/MultiCycleCPU/ALU.v
+L0 2
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1702818540.905000
+!s107 D:/altera/15.0/MultiCycleCPU/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/ALU.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU
+n@a@l@u
+vCLKmode
+Z6 !s110 1702818541
+!i10b 1
+!s100 a3>DAUW];c4YLRjk@ZMX?3
+I_nb^z7B]Z_gk5nkeD;LJ=2
+R2
+R0
+w1702396230
+8D:/altera/15.0/MultiCycleCPU/CLKmode.v
+FD:/altera/15.0/MultiCycleCPU/CLKmode.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1702818541.080000
+!s107 D:/altera/15.0/MultiCycleCPU/CLKmode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/CLKmode.v|
+!i113 1
+R4
+R5
+n@c@l@kmode
+vControlUnit
+R1
+!i10b 1
+!s100 cXHe?=Ln5Jb=TWI>m0Tfe2
+I<T]DT1j1eP2le:QbTSIH]1
+R2
+R0
+w1702396159
+8D:/altera/15.0/MultiCycleCPU/ControlUnit.v
+FD:/altera/15.0/MultiCycleCPU/ControlUnit.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1702818540.727000
+!s107 D:/altera/15.0/MultiCycleCPU/ControlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/ControlUnit.v|
+!i113 1
+R4
+R5
+n@control@unit
+vDataMEM
+R1
+!i10b 1
+!s100 nWoEfXE:;188aTbWo8lJ<1
+Ia;NlKK=0:iSRI1LF^eWEL3
+R2
+R0
+w1702396166
+8D:/altera/15.0/MultiCycleCPU/DataMEM.v
+FD:/altera/15.0/MultiCycleCPU/DataMEM.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1702818540.541000
+!s107 D:/altera/15.0/MultiCycleCPU/DataMEM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/DataMEM.v|
+!i113 1
+R4
+R5
+n@data@m@e@m
+vdiv_20
+Z7 !s110 1702818539
+!i10b 1
+!s100 M7;f6AgdJ3B=Jh7C1OP1b1
+ImZN:8U4HdeD]=o7M;2bHo0
+R2
+R0
+w1702396226
+8D:/altera/15.0/MultiCycleCPU/div_20.v
+FD:/altera/15.0/MultiCycleCPU/div_20.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1702818539.208000
+!s107 D:/altera/15.0/MultiCycleCPU/div_20.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/div_20.v|
+!i113 1
+R4
+R5
+vInsMEM
+R6
+!i10b 1
+!s100 jz_mcHW?lboO@>1:[DkbQ0
+IR=]>bULQKl<f?8W=_cmo_2
+R2
+R0
+w1702818508
+8D:/altera/15.0/MultiCycleCPU/InsMEM.v
+FD:/altera/15.0/MultiCycleCPU/InsMEM.v
+L0 47
+R3
+r1
+!s85 0
+31
+!s108 1702818541.411000
+!s107 D:/altera/15.0/MultiCycleCPU/InsMEM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/InsMEM.v|
+!i113 1
+R4
+R5
+n@ins@m@e@m
+vInstructionCut
+R1
+!i10b 1
+!s100 Td:YQYUZVz@mW?`fKi>PX1
+I[8UM4;HlMTVGI6?]gJUm43
+R2
+R0
+w1702396191
+8D:/altera/15.0/MultiCycleCPU/InstructionCut.v
+FD:/altera/15.0/MultiCycleCPU/InstructionCut.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1702818540.369000
+!s107 D:/altera/15.0/MultiCycleCPU/InstructionCut.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/InstructionCut.v|
+!i113 1
+R4
+R5
+n@instruction@cut
+vIO
+R6
+!i10b 1
+!s100 oN8ojG==Tz`fClXR^BLjl0
+Ie2XhH9ZhX?cSKGnZVm<Vl0
+R2
+R0
+w1702396184
+8D:/altera/15.0/MultiCycleCPU/IO.v
+FD:/altera/15.0/MultiCycleCPU/IO.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1702818541.235000
+!s107 D:/altera/15.0/MultiCycleCPU/IO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/IO.v|
+!i113 1
+R4
+R5
+n@i@o
+vMultiCycleCPU
+R7
+!i10b 1
+!s100 g9UI0nY5GlGDSGe;fS7G92
+Ih=5Cj3UL06n;UTIT?4A]G3
+R2
+R0
+w1702779847
+8D:/altera/15.0/MultiCycleCPU/MultiCycleCPU.v
+FD:/altera/15.0/MultiCycleCPU/MultiCycleCPU.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1702818539.020000
+!s107 D:/altera/15.0/MultiCycleCPU/MultiCycleCPU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/MultiCycleCPU.v|
+!i113 1
+R4
+R5
+n@multi@cycle@c@p@u
+vMultiCycleCPU_vlg_tst
+R6
+!i10b 1
+!s100 BF?D:j^bQ?mi`m94cCUP]0
+I7Mdcm[=47NlBThc3>nkQ;1
+R2
+R0
+w1701848071
+8D:/altera/15.0/MultiCycleCPU/simulation/modelsim/MultiCycleCPU.vt
+FD:/altera/15.0/MultiCycleCPU/simulation/modelsim/MultiCycleCPU.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1702818541.584000
+!s107 D:/altera/15.0/MultiCycleCPU/simulation/modelsim/MultiCycleCPU.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU/simulation/modelsim|D:/altera/15.0/MultiCycleCPU/simulation/modelsim/MultiCycleCPU.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/altera/15.0/MultiCycleCPU/simulation/modelsim
+n@multi@cycle@c@p@u_vlg_tst
+vPC
+R1
+!i10b 1
+!s100 MTO4g>c?9E68ZP94K6VXn2
+IFiLNAgoL:`?AFT=ERM53o1
+R2
+R0
+w1702396235
+8D:/altera/15.0/MultiCycleCPU/PC.v
+FD:/altera/15.0/MultiCycleCPU/PC.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1702818540.106000
+!s107 D:/altera/15.0/MultiCycleCPU/PC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/PC.v|
+!i113 1
+R4
+R5
+n@p@c
+vPCAddr
+R7
+!i10b 1
+!s100 OL93CTX[45l>M3K<__=5<3
+I<:f1i?Dh<HzM9Dj5lWOe[3
+R2
+R0
+w1702396195
+8D:/altera/15.0/MultiCycleCPU/PCAddr.v
+FD:/altera/15.0/MultiCycleCPU/PCAddr.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1702818539.920000
+!s107 D:/altera/15.0/MultiCycleCPU/PCAddr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/PCAddr.v|
+!i113 1
+R4
+R5
+n@p@c@addr
+vRegisterFile
+R7
+!i10b 1
+!s100 ]Wf^2J;R>LGI3]AHRN?2`3
+IYa?nQZjC2d1WJAf6HBYcI2
+R2
+R0
+w1702396202
+8D:/altera/15.0/MultiCycleCPU/RegisterFile.v
+FD:/altera/15.0/MultiCycleCPU/RegisterFile.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1702818539.747000
+!s107 D:/altera/15.0/MultiCycleCPU/RegisterFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/RegisterFile.v|
+!i113 1
+R4
+R5
+n@register@file
+vshow
+R7
+!i10b 1
+!s100 IPiPgoon^_8:c1S8Ke97a1
+Ifge?]PSA75JPI^K_hn9b62
+R2
+R0
+w1702396240
+8D:/altera/15.0/MultiCycleCPU/show.v
+FD:/altera/15.0/MultiCycleCPU/show.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1702818539.555000
+!s107 D:/altera/15.0/MultiCycleCPU/show.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/show.v|
+!i113 1
+R4
+R5
+vSignZeroExtend
+R7
+!i10b 1
+!s100 2l9G5]V^an=ne4^fNWiF10
+I1Z3fTMzMUBmcYj5diBH5@1
+R2
+R0
+w1702396207
+8D:/altera/15.0/MultiCycleCPU/SignZeroExtend.v
+FD:/altera/15.0/MultiCycleCPU/SignZeroExtend.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1702818539.385000
+!s107 D:/altera/15.0/MultiCycleCPU/SignZeroExtend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/15.0/MultiCycleCPU|D:/altera/15.0/MultiCycleCPU/SignZeroExtend.v|
+!i113 1
+R4
+R5
+n@sign@zero@extend

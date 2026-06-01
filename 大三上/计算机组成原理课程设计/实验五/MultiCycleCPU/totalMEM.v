@@ -1,0 +1,81 @@
+`timescale 1ns / 1ps
+
+module totalMEM(
+    input [31:0] IAddr,
+    input InstMemRW,
+    input CLK,
+    input [3:0] InPut,
+    input input_number, 
+    input [31:0] DAddr,
+    input [31:0] DataIn,
+    input MemWrite,
+    input CLK1,
+    input MemRead,
+    input DBDataSrc,
+    output reg [31:0] IDataOut,
+    output reg [31:0] DataOut,
+    output reg [31:0] DB
+);
+
+    reg [39:0] ram [0:31];  //存储器定义必须用reg类型
+    integer i;
+    
+    // 初始化存储器
+    initial begin
+        ram[0]  = 40'b0000000000001100000000000000000000000000;
+        ram[1]  = 40'b0000000000001100000000000000000000000000;
+        ram[2]  = 40'b0000000000000100000000000000000000000000;
+        ram[3]  = 40'b0000000000100000000000010000000000000000;
+        ram[4]  = 40'b0000000000100000000000100000000000000001;
+        ram[5]  = 40'b0000000000100000000000110000000000000001;
+        ram[6]  = 40'b0000000000000000001000100000000000011000;
+        ram[7]  = 40'b0000000000000000000000000010000000010010;
+        ram[8]  = 40'b0000000000000000000001000001000000100000;
+        ram[9]  = 40'b0000000000000000001000110000100000100010;
+        ram[10] = 40'b0000000000010100001000111111111111111011;
+        ram[11] = 40'b0000000011111100000000000000000000000000;
+        ram[12] = 40'b0000000011001100000000000000000000000000;
+        ram[13] = 40'b0000000011111000000000000000000000000000;
+        
+        // 使用循环初始化ram[14..31]为0
+        for (i = 14; i <= 31; i = i + 1) begin
+            ram[i] = 40'b0000000000000000000000000000000000000000;
+        end
+        
+        DB = 32'b0;  // 初始化DB为0
+    end
+
+    always @(*) begin
+        if (InstMemRW) begin
+            if (IAddr == 12) begin
+                IDataOut[31:8] = ram[IAddr[6:2]][31:8];
+                IDataOut[7:0] = {ram[IAddr[6:2]][7:4], InPut};
+            end else begin
+                IDataOut = ram[IAddr[6:2]][31:0];
+            end
+        end
+    end
+
+    always @(MemRead or DAddr or DBDataSrc) begin
+        DataOut[7:0] = MemRead ? ram[DAddr + 3][39:32] : 8'bz; //z 为高阻态
+        DataOut[15:8] = MemRead ? ram[DAddr + 2][39:32] : 8'bz;
+        DataOut[23:16] = MemRead ? ram[DAddr + 1][39:32] : 8'bz;
+        DataOut[31:24] = MemRead ? ram[DAddr][39:32] : 8'bz;
+
+        DB = (DBDataSrc == 0) ? DAddr : DataOut;
+    end
+
+    always @(negedge CLK) begin
+        // 写操作
+        if (MemWrite) begin
+            ram[DAddr][39:32] = DataIn[31:24];
+            ram[DAddr + 1][39:32] = DataIn[23:16];
+            ram[DAddr + 2][39:32] = DataIn[15:8]; 
+            ram[DAddr + 3][39:32] = DataIn[7:0];
+        end
+        $display("mwr: %d ram[12]: %h ram[13]: %h ram[14]: %h ram[15]: %h", 
+            MemWrite, ram[12], ram[13], ram[14], ram[15]);
+    end
+
+endmodule
+

@@ -1,0 +1,73 @@
+`timescale 1ns/1ps
+//Control Unit
+module ControlUnit(
+input halt,
+input zero,		//ALU运算结果是否为0,为0时候为1
+input [5:0] op,	//指令的操作码
+input [5:0] funct,
+output reg PCWre,		//PC是否更改的信号量,为0时候不更改，否则可以更改
+output reg ExtSel,		//立即数扩展的信号量，为时候为扩展，否则为符号扩展
+output reg InsMemRW,	//指令寄存器的状态操作符，为0的时候写指令寄存器，否则为读指令寄存器
+output reg RegDst,		//与寄存器组寄存器的地址，为0的时候地址来自rt,为1的时候地址来自rd
+output reg RegWre,		//奇存器组写使能，为1的时候可写
+output reg ALUSrcA,		//控制ALU数据A的选择端的输入，为0的时候，来自寄存器堆data1输出，为1的时候来自移位数sa
+output reg ALUSrcB,		//控制ALU数据B的选择端的输入，为0的时候，来自寄存器堆data2输出，为1时候来自扩展过的立即数
+output reg [1:0]PCSrc, //获取 下一个pc的地址的数据选择器的选择端输入
+output reg [4:0]ALUOp, //ALU 8种运算功能选择(000-111)
+output reg mRD,  //数据存储器读控制信号,为0读
+output reg mWR,  //数据存储器写控制信号，为0写
+output reg DBDataSrc //数据保存的选择端 ,为0来自ALU运算结果的输出，为1来自数据寄存器(Data MEM)的输出
+);
+initial begin
+	InsMemRW = 1;
+	PCWre = 1;
+	mRD= 0;
+	mWR= 0;
+   DBDataSrc = 0;
+end
+
+
+	always@(op or zero or funct or halt)
+	begin
+		
+		PCWre = (op==6'b111111||halt==1) ? 0 : 1; //halt
+		ALUSrcB = (op == 6'b001000||op==6'b100011||op==6'b101011)? 1 : 0;//ImmorBtoALU
+		ALUSrcA = ((op == 6'b000000&&funct==6'b000000)||(op == 6'b000000&&funct==6'b0000010)||(op == 6'b000000&&funct==6'b010011))? 1 : 0;//SaorAtoALU
+	   DBDataSrc = (op == 6'b100011)? 1 : 0;//MemALUtoReg
+	   RegWre = (op == 6'b101011||op==6'b000101||op==6'b000101||op==6'b101011)? 0 : 1;//Regwrite
+		mWR = (op == 6'b100011) ? 1 : 0;  //sw
+    	mRD = (op == 6'b101011) ? 1 : 0;  //lw
+		ExtSel = (op == 6'b000000)? 0 : 1;//Extend
+	   RegDst = (op == 6'b000000)? 1 : 0;//rdrtwrite
+	end
+	 always @(op or zero or funct)
+	 begin
+	 if (op == 6'b000101 && zero==0)         PCSrc=1;//bne
+	 else if (op == 6'b000010)    PCSrc=2;//j
+	 //else if (op == 6'b)   PCSrc=3;//jr
+	 else  PCSrc=0;
+	 end
+
+	 always @(op or funct or ALUOp)
+	 begin
+	 if (op == 6'b000000&&funct==6'b100000)   ALUOp=1;
+	 else if (op == 6'b000000&&funct==6'b100100)   ALUOp=2;
+	 else if (op == 6'b000000&&funct==6'b100111)   ALUOp=3;
+	 else if (op == 6'b000000&&funct==6'b100101)   ALUOp=4;
+	 else if (op == 6'b000000&&funct==6'b101010)   ALUOp=5;
+	 else if (op == 6'b000000&&funct==6'b000000)   ALUOp=6;
+	 else if (op == 6'b000000&&funct==6'b000010)   ALUOp=7;
+	 else if (op == 6'b000000&&funct==6'b100010)   ALUOp=8;
+	 else if (op == 6'b000000&&funct==6'b011010)   ALUOp=9;
+	 else if (op == 6'b000000&&funct==6'b010000)   ALUOp=10;
+	 else if (op == 6'b000000&&funct==6'b010010)   ALUOp=11;
+	 else if (op == 6'b000000&&funct==6'b011000)   ALUOp=12;
+	 else if (op == 6'b000000&&funct==6'b000011)   ALUOp=13;
+	 else if (op == 6'b001000)   ALUOp=14;
+	 else if (op == 6'b000101)   ALUOp=15;
+	 else if (op == 6'b100011)   ALUOp=16;
+	 else if (op == 6'b101011)   ALUOp=17;
+	
+
+	 end
+endmodule

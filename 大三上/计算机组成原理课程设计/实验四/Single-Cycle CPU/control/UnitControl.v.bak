@@ -1,0 +1,9 @@
+module UnitControl(
+	input [5:0]op,
+	input [5:0]func,
+	
+	output reg [4:0] ALUOp,
+	
+	output reg Branch,	//是否是分支指令?
+	output reg SExtend,	//是否是符号扩展?
+);

@@ -1,0 +1,339 @@
+m255
+K3
+13
+cModel Technology
+Z0 dG:\altrea_pll\MultiCycleCPU\simulation\modelsim0
+vALU
+IBFTRkLKkU4iXGhQz0^c8D1
+Vaf]P=2Mo?S3:7oBFPk;W32
+Z1 dG:\altrea_pll\MultiCycleCPU\simulation\modelsim0
+w1702396215
+8G:/altrea_pll/MultiCycleCPU/ALU.v
+FG:/altrea_pll/MultiCycleCPU/ALU.v
+L0 2
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU -O0
+n@a@l@u
+!i10b 1
+!s100 >P_o=a]XNkalJm]Ib:<bM3
+!s85 0
+!s108 1702824749.996000
+!s107 G:/altrea_pll/MultiCycleCPU/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/ALU.v|
+!s101 -O0
+vCLKmode
+IA8EiW<D>?KdnMHT4oZfzi1
+V^INE`SSLlgd9b:e13nXKm1
+R1
+w1702396230
+8G:/altrea_pll/MultiCycleCPU/CLKmode.v
+FG:/altrea_pll/MultiCycleCPU/CLKmode.v
+L0 2
+R2
+r1
+31
+R3
+R4
+n@c@l@kmode
+!i10b 1
+!s100 X8dGkQ_[hN3hR=l78hn`W1
+!s85 0
+!s108 1702824750.244000
+!s107 G:/altrea_pll/MultiCycleCPU/CLKmode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/CLKmode.v|
+!s101 -O0
+vControlUnit
+II8GB:MiC?OC?Uo53W@DNF0
+V<HIW09h49HLFPE`6cMYcO1
+R1
+w1702396159
+8G:/altrea_pll/MultiCycleCPU/ControlUnit.v
+FG:/altrea_pll/MultiCycleCPU/ControlUnit.v
+L0 3
+R2
+r1
+31
+R3
+R4
+n@control@unit
+!i10b 1
+!s100 1dZA0Bb@2QNTc]EKkfV:=3
+!s85 0
+!s108 1702824749.784000
+!s107 G:/altrea_pll/MultiCycleCPU/ControlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/ControlUnit.v|
+!s101 -O0
+vDataMEM
+IWT9IiXezYNMg:414kWgg^2
+V4c4V_b[CE>0_8J`Xg_5eT0
+R1
+w1702396166
+8G:/altrea_pll/MultiCycleCPU/DataMEM.v
+FG:/altrea_pll/MultiCycleCPU/DataMEM.v
+L0 3
+R2
+r1
+31
+R3
+R4
+n@data@m@e@m
+!i10b 1
+!s100 Y]6PRC;<:[2KNUaF>NFin1
+!s85 0
+!s108 1702824749.608000
+!s107 G:/altrea_pll/MultiCycleCPU/DataMEM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/DataMEM.v|
+!s101 -O0
+vdiv_20
+I^QckP77D9hX;`H38URd[N3
+VeT^l4N3EV;Ei`ja^2_8VH2
+R1
+w1702396226
+8G:/altrea_pll/MultiCycleCPU/div_20.v
+FG:/altrea_pll/MultiCycleCPU/div_20.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 4AR>`Y2iB<WB@n`3UEVbj1
+!s85 0
+!s108 1702824747.173000
+!s107 G:/altrea_pll/MultiCycleCPU/div_20.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/div_20.v|
+!s101 -O0
+vInsMEM
+IgM4T>ked=Z_F<kOC1MzH42
+Vdb1[0ISfnhJa<J[`4D>eZ1
+R1
+w1702824281
+8G:/altrea_pll/MultiCycleCPU/InsMEM.v
+FG:/altrea_pll/MultiCycleCPU/InsMEM.v
+L0 3
+R2
+r1
+31
+R3
+R4
+n@ins@m@e@m
+!i10b 1
+!s100 HCA6?1SK6Zke1oYI=IMg50
+!s85 0
+!s108 1702824749.428000
+!s107 G:/altrea_pll/MultiCycleCPU/InsMEM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/InsMEM.v|
+!s101 -O0
+vInstructionCut
+IjB;05Pjo=YI_3GV8`9kJe2
+V`I4cobmBHmL_HbSdPg=E;2
+R1
+w1702396191
+8G:/altrea_pll/MultiCycleCPU/InstructionCut.v
+FG:/altrea_pll/MultiCycleCPU/InstructionCut.v
+L0 2
+R2
+r1
+31
+R3
+R4
+n@instruction@cut
+!i10b 1
+!s100 DTImMCY;8<D`^X]6lEMHE2
+!s85 0
+!s108 1702824749.255000
+!s107 G:/altrea_pll/MultiCycleCPU/InstructionCut.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/InstructionCut.v|
+!s101 -O0
+vIO
+Ib0ijN^DbYbM:Q_ll0V<^n0
+VJSTii5zzo0O;6[45WoNI40
+R1
+w1702396184
+8G:/altrea_pll/MultiCycleCPU/IO.v
+FG:/altrea_pll/MultiCycleCPU/IO.v
+L0 3
+R2
+r1
+31
+R3
+R4
+n@i@o
+!i10b 1
+!s100 >cS8OMfzUSbA=mP1;DjlI1
+!s85 0
+!s108 1702824750.857000
+!s107 G:/altrea_pll/MultiCycleCPU/IO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/IO.v|
+!s101 -O0
+vMultiCycleCPU
+I=9ELb8lEdG5I]`3ldMjL@0
+VJE;iIa<1[?jh62g7_Ph4=2
+R1
+w1702824277
+8G:/altrea_pll/MultiCycleCPU/MultiCycleCPU.v
+FG:/altrea_pll/MultiCycleCPU/MultiCycleCPU.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@multi@cycle@c@p@u
+!i10b 1
+!s100 LMg_AJ^>KmQGQ^LB45=[b2
+!s85 0
+!s108 1702824746.948000
+!s107 G:/altrea_pll/MultiCycleCPU/MultiCycleCPU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/MultiCycleCPU.v|
+!s101 -O0
+vMultiCycleCPU_vlg_tst
+!i10b 1
+!s100 C3BSe:6T^4<5k3SzYUKSj1
+I3kY3<nJ46]BeNUfYRbR^[1
+VA5k=dQYakPCh[Y0D]RBLn2
+R1
+w1702823687
+8G:/altrea_pll/MultiCycleCPU/simulation/modelsim0/MultiCycleCPU.vt
+FG:/altrea_pll/MultiCycleCPU/simulation/modelsim0/MultiCycleCPU.vt
+L0 29
+R2
+r1
+!s85 0
+31
+!s108 1702824751.080000
+!s107 G:/altrea_pll/MultiCycleCPU/simulation/modelsim0/MultiCycleCPU.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU/simulation/modelsim0|G:/altrea_pll/MultiCycleCPU/simulation/modelsim0/MultiCycleCPU.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+G:/altrea_pll/MultiCycleCPU/simulation/modelsim0 -O0
+n@multi@cycle@c@p@u_vlg_tst
+vPC
+I=dhk[9A:VhH]L<]O:IO=<1
+V3[3?RG^2=d;TVh?Lh>=?[0
+R1
+w1702820249
+8G:/altrea_pll/MultiCycleCPU/PC.v
+FG:/altrea_pll/MultiCycleCPU/PC.v
+L0 2
+R2
+r1
+31
+R3
+R4
+n@p@c
+!i10b 1
+!s100 S8OP5=XTKNj;GfLzgb9OW3
+!s85 0
+!s108 1702824748.704000
+!s107 G:/altrea_pll/MultiCycleCPU/PC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/PC.v|
+!s101 -O0
+vPCAddr
+IQa[mNhEa_<Md^2cfOdS2d1
+VDOn5RhR]CzR`_UZ4<Bd?Z2
+R1
+w1702824654
+8G:/altrea_pll/MultiCycleCPU/PCAddr.v
+FG:/altrea_pll/MultiCycleCPU/PCAddr.v
+L0 2
+R2
+r1
+31
+R3
+R4
+n@p@c@addr
+!i10b 1
+!s100 QRSH=4WIgC><1`RL2gaQS2
+!s85 0
+!s108 1702824748.466000
+!s107 G:/altrea_pll/MultiCycleCPU/PCAddr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/PCAddr.v|
+!s101 -O0
+vRegisterFile
+I0Qi<KN^N3BZQ;R6Rz3`Xe2
+V1OI@hFgIDdo1_a?O:Y1l60
+R1
+w1702396202
+8G:/altrea_pll/MultiCycleCPU/RegisterFile.v
+FG:/altrea_pll/MultiCycleCPU/RegisterFile.v
+L0 2
+R2
+r1
+31
+R3
+R4
+n@register@file
+!i10b 1
+!s100 M7NiHEk1EdIQ]dQ7bHH^10
+!s85 0
+!s108 1702824748.241000
+!s107 G:/altrea_pll/MultiCycleCPU/RegisterFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/RegisterFile.v|
+!s101 -O0
+vROM1P
+I2iVnC`CC`XB];?aMNW@GZ2
+V6@LT<U15Mnf9gWJ9i^ibT2
+R1
+w1702823511
+8G:/altrea_pll/MultiCycleCPU/ROM1P.v
+FG:/altrea_pll/MultiCycleCPU/ROM1P.v
+L0 39
+R2
+r1
+31
+R3
+n@r@o@m1@p
+R4
+!i10b 1
+!s100 ZD2e>K<:M_I@WOEjhELR`0
+!s85 0
+!s108 1702824746.096000
+!s107 G:/altrea_pll/MultiCycleCPU/ROM1P.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/ROM1P.v|
+!s101 -O0
+vshow
+IA^LJL1lbL_3SF4A=kiNOI2
+V:RCb<TJ[k2f]1ahVA_Y>N3
+R1
+w1702396240
+8G:/altrea_pll/MultiCycleCPU/show.v
+FG:/altrea_pll/MultiCycleCPU/show.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ZjU=7K;5S`Jk3TLZhV_7o2
+!s85 0
+!s108 1702824747.987000
+!s107 G:/altrea_pll/MultiCycleCPU/show.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/show.v|
+!s101 -O0
+vSignZeroExtend
+I[YSA_2SNXBZojaR=R0ScX3
+VzSNTbI5oVP[MBlKe`Wji;1
+R1
+w1702396207
+8G:/altrea_pll/MultiCycleCPU/SignZeroExtend.v
+FG:/altrea_pll/MultiCycleCPU/SignZeroExtend.v
+L0 2
+R2
+r1
+31
+R3
+R4
+n@sign@zero@extend
+!i10b 1
+!s100 :cD<X?D?e9Lzf:8:LFz@@2
+!s85 0
+!s108 1702824747.498000
+!s107 G:/altrea_pll/MultiCycleCPU/SignZeroExtend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/altrea_pll/MultiCycleCPU|G:/altrea_pll/MultiCycleCPU/SignZeroExtend.v|
+!s101 -O0

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+      <meta charset="utf-8">
+      <title>{% block title %}{% endblock %}</title>
+      {% load static %}
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+      <script src="{% static 'js/jquery.js' %}"></script>
+      <!--bootstrap核心js-->
+      <script src="{% static 'js/bootstrap.js' %}"></script>
+  </head>
+  <body class="container">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">首页</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">明日学院</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">明日图书</a>
+    </li>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#"
+          id="navbardrop" data-toggle="dropdown">
+        关于我们
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">公司简介</a>
+        <a class="dropdown-item" href="#">企业文化</a>
+        <a class="dropdown-item" href="#">联系我们</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+  {% block content %}{% endblock %}
+  </body>
+</html>

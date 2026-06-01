@@ -1,0 +1,383 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/Berton/Desktop/SingleCPU/AMycpu/simulation/modelsim
+vAdd
+Z1 !s110 1731809115
+!i10b 1
+!s100 Ra>gDBM7`ZGg^mNV:fa<i2
+I`?GCANAD^ba4TaiOXO<R^1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1621161954
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/add.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/add.v
+L0 1
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1731809115.831000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/add.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/add.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu
+n@add
+vCpu
+Z6 !s110 1731809114
+!i10b 1
+!s100 K6l]0^S8US_HGGmNSkY4e3
+Iz]F9D[Z<Q7V4<MQATDOD52
+R2
+R0
+w1730862561
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/Cpu.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/Cpu.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809114.155000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/Cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/Cpu.v|
+!i113 1
+R4
+R5
+n@cpu
+vCpu_vlg_tst
+!s110 1731809116
+!i10b 1
+!s100 Xm;P0a[04Cc]jfPE4L<an1
+IOcZPGAn4RUK6jA_R63QPm0
+R2
+R0
+w1730864125
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/simulation/modelsim/Cpu.vt
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/simulation/modelsim/Cpu.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1731809116.106000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/simulation/modelsim/Cpu.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu/simulation/modelsim|D:/Users/Berton/Desktop/SingleCPU/AMycpu/simulation/modelsim/Cpu.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu/simulation/modelsim
+n@cpu_vlg_tst
+vDataMem
+R1
+!i10b 1
+!s100 R<@X<3Y:8`zP@L0A5ha850
+Id[U?X_aBC:AgHXo41M4P51
+R2
+R0
+w1623337950
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/datamem.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/datamem.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809115.125000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/datamem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/datamem.v|
+!i113 1
+R4
+R5
+n@data@mem
+vExtend
+R6
+!i10b 1
+!s100 6X<];<CCAY^`5XTaDTGVl1
+I;GOJMKnMY=Ki=W1ALfYLQ3
+R2
+R0
+w1621476432
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/extend.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/extend.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809114.846000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/extend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/extend.v|
+!i113 1
+R4
+R5
+n@extend
+vinputextend
+R1
+!i10b 1
+!s100 hA6c=>0JLIC8c2<Wnc0dV3
+I9WT6E75l5bA;V:T=Sg1SC0
+R2
+R0
+w1638426574
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/inputextend.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/inputextend.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809115.549000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/inputextend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/inputextend.v|
+!i113 1
+R4
+R5
+vinputNumber
+R1
+!i10b 1
+!s100 7Mn`1Aa@U<TgKi3k?UAYF2
+IA_OZ7O=o?FfW@RaF9d^@N1
+R2
+R0
+w1638418030
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/inputnumber.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/inputnumber.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809115.397000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/inputnumber.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/inputnumber.v|
+!i113 1
+R4
+R5
+ninput@number
+vInstructionCut
+!s110 1731809113
+!i10b 1
+!s100 =<P]^YemU1]Tj:0@5I2n:0
+I3Z@P>IX7nB<R02jVK<RdE3
+R2
+R0
+w1637754324
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/InstructionCut.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/InstructionCut.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809113.855000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/InstructionCut.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/InstructionCut.v|
+!i113 1
+R4
+R5
+n@instruction@cut
+vInstructionMem
+R1
+!i10b 1
+!s100 i_SJJ?2g3T7OEKlknSioI0
+IM_8T39ngXo5aW>UmABQDO0
+R2
+R0
+w1638419006
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/instructionmem.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/instructionmem.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809115.250000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/instructionmem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/instructionmem.v|
+!i113 1
+R4
+R5
+n@instruction@mem
+vLeft
+R1
+!i10b 1
+!s100 Bm4PT_A8nIz:adK85A>3J0
+I9KkBcYm;BD:LnEZgno70:2
+R2
+R0
+w1621479312
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/left.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/left.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809115.977000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/left.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/left.v|
+!i113 1
+R4
+R5
+n@left
+vMux2_1
+R6
+!i10b 1
+!s100 8J=ZmDN8N^K@Y6Ki3<_1o0
+INb>k7HN]aU]N<ElP3eP@;3
+R2
+R0
+w1638423090
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/mux2_1.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/mux2_1.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809114.551000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/mux2_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/mux2_1.v|
+!i113 1
+R4
+R5
+n@mux2_1
+vMux2_1_5
+R6
+!i10b 1
+!s100 TDfaY?>;_^3dh?d[GJ]9@2
+I28A7l:7FBcz=NN^Y02_d73
+R2
+R0
+w1623331806
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/mux2_1_5.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/mux2_1_5.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809114.694000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/mux2_1_5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/mux2_1_5.v|
+!i113 1
+R4
+R5
+n@mux2_1_5
+vMyALU
+R1
+!i10b 1
+!s100 1ZOd87MEZVO`zzd8]ZaMW3
+IdVL:e>GZ@5Bm4PCRTW73K0
+R2
+R0
+w1637755452
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/myalu.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/myalu.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809114.996000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/myalu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/myalu.v|
+!i113 1
+R4
+R5
+n@my@a@l@u
+vPc
+R1
+!i10b 1
+!s100 jFij8ea99aD3AM1XHWi;E3
+I4>oXYbZ8j04jljC<3h9US0
+R2
+R0
+w1623341058
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/pc.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/pc.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809115.683000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/pc.v|
+!i113 1
+R4
+R5
+n@pc
+vRegFile
+R6
+!i10b 1
+!s100 f@048`o2Ue8>L7FK;6:9G2
+I0jEKz>1c<DZ8PD6obH7`Q1
+R2
+R0
+w1626941286
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/RegFile.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/RegFile.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809114.012000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/RegFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/RegFile.v|
+!i113 1
+R4
+R5
+n@reg@file
+vResult
+R6
+!i10b 1
+!s100 n<DbbZF_e0lHnPZ]6<Xh[2
+IL7IUFl8TRP_l6]^BSBUC51
+R2
+R0
+w1622637190
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/result.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/result.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809114.282000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/result.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/result.v|
+!i113 1
+R4
+R5
+n@result
+vUnitControl
+R6
+!i10b 1
+!s100 ZgZ;[KFEJ4mZmV?Y_V6eQ0
+IXV6kRHTSUQzH^m=0C4QTK3
+R2
+R0
+w1638439244
+8D:/Users/Berton/Desktop/SingleCPU/AMycpu/unitcontrol.v
+FD:/Users/Berton/Desktop/SingleCPU/AMycpu/unitcontrol.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1731809114.419000
+!s107 D:/Users/Berton/Desktop/SingleCPU/AMycpu/unitcontrol.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu|D:/Users/Berton/Desktop/SingleCPU/AMycpu/unitcontrol.v|
+!i113 1
+R4
+R5
+n@unit@control

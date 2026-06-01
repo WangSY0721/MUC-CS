@@ -1,0 +1,114 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 208 224)
+	(text "UnitControl" (rect 5 0 48 12)(font "Arial" ))
+	(text "inst" (rect 8 192 20 204)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "op[5..0]" (rect 0 0 29 12)(font "Arial" ))
+		(text "op[5..0]" (rect 21 27 50 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "func[5..0]" (rect 0 0 37 12)(font "Arial" ))
+		(text "func[5..0]" (rect 21 43 58 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "ALUOp[4..0]" (rect 0 0 54 12)(font "Arial" ))
+		(text "ALUOp[4..0]" (rect 117 27 171 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32)(line_width 3))
+	)
+	(port
+		(pt 192 48)
+		(output)
+		(text "jump" (rect 0 0 18 12)(font "Arial" ))
+		(text "jump" (rect 153 43 171 55)(font "Arial" ))
+		(line (pt 192 48)(pt 176 48)(line_width 1))
+	)
+	(port
+		(pt 192 64)
+		(output)
+		(text "Branch" (rect 0 0 28 12)(font "Arial" ))
+		(text "Branch" (rect 143 59 171 71)(font "Arial" ))
+		(line (pt 192 64)(pt 176 64)(line_width 1))
+	)
+	(port
+		(pt 192 80)
+		(output)
+		(text "Memwre" (rect 0 0 35 12)(font "Arial" ))
+		(text "Memwre" (rect 136 75 171 87)(font "Arial" ))
+		(line (pt 192 80)(pt 176 80)(line_width 1))
+	)
+	(port
+		(pt 192 96)
+		(output)
+		(text "Memread" (rect 0 0 38 12)(font "Arial" ))
+		(text "Memread" (rect 133 91 171 103)(font "Arial" ))
+		(line (pt 192 96)(pt 176 96)(line_width 1))
+	)
+	(port
+		(pt 192 112)
+		(output)
+		(text "Regwre" (rect 0 0 31 12)(font "Arial" ))
+		(text "Regwre" (rect 140 107 171 119)(font "Arial" ))
+		(line (pt 192 112)(pt 176 112)(line_width 1))
+	)
+	(port
+		(pt 192 128)
+		(output)
+		(text "ALUsrc" (rect 0 0 34 12)(font "Arial" ))
+		(text "ALUsrc" (rect 137 123 171 135)(font "Arial" ))
+		(line (pt 192 128)(pt 176 128)(line_width 1))
+	)
+	(port
+		(pt 192 144)
+		(output)
+		(text "RegDst" (rect 0 0 31 12)(font "Arial" ))
+		(text "RegDst" (rect 140 139 171 151)(font "Arial" ))
+		(line (pt 192 144)(pt 176 144)(line_width 1))
+	)
+	(port
+		(pt 192 160)
+		(output)
+		(text "MemtoReg" (rect 0 0 46 12)(font "Arial" ))
+		(text "MemtoReg" (rect 125 155 171 167)(font "Arial" ))
+		(line (pt 192 160)(pt 176 160)(line_width 1))
+	)
+	(port
+		(pt 192 176)
+		(output)
+		(text "Pcwre" (rect 0 0 24 12)(font "Arial" ))
+		(text "Pcwre" (rect 147 171 171 183)(font "Arial" ))
+		(line (pt 192 176)(pt 176 176)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 192)(line_width 1))
+	)
+)

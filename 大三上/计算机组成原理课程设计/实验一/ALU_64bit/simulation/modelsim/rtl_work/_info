@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Quartus/ALU_64bit/simulation/modelsim
+vALU_16bit
+Z1 !s110 1703951422
+!i10b 1
+!s100 n1PikLeVmh1JQ:7Xo;akS1
+IQ94?W:KaU^DaN21;K1VaD3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1699348777
+8D:/Quartus/ALU_64bit/ALU_16bit.v
+FD:/Quartus/ALU_64bit/ALU_16bit.v
+Z3 L0 20
+Z4 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1703951422.671000
+!s107 D:/Quartus/ALU_64bit/ALU_16bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/ALU_64bit|D:/Quartus/ALU_64bit/ALU_16bit.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/Quartus/ALU_64bit
+n@a@l@u_16bit
+vALU_64bit
+R1
+!i10b 1
+!s100 _ld=9iClS<fdz^[:d`XJn1
+IhjNK:aI=AMBmK>kGh?g^F2
+R2
+R0
+w1699351565
+8D:/Quartus/ALU_64bit/ALU_64bit.v
+FD:/Quartus/ALU_64bit/ALU_64bit.v
+R3
+R4
+r1
+!s85 0
+31
+!s108 1703951422.731000
+!s107 D:/Quartus/ALU_64bit/ALU_64bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/ALU_64bit|D:/Quartus/ALU_64bit/ALU_64bit.v|
+!i113 1
+R5
+R6
+n@a@l@u_64bit
+vALU_64bit_vlg_tst
+R1
+!i10b 1
+!s100 T3k@W^zCNXbGRGk`U9^S01
+I:9IlP6]jz:FPRiP<K9a?z2
+R2
+R0
+w1699353335
+8D:/Quartus/ALU_64bit/simulation/modelsim/ALU_64bit.vt
+FD:/Quartus/ALU_64bit/simulation/modelsim/ALU_64bit.vt
+L0 29
+R4
+r1
+!s85 0
+31
+!s108 1703951422.801000
+!s107 D:/Quartus/ALU_64bit/simulation/modelsim/ALU_64bit.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/ALU_64bit/simulation/modelsim|D:/Quartus/ALU_64bit/simulation/modelsim/ALU_64bit.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/Quartus/ALU_64bit/simulation/modelsim
+n@a@l@u_64bit_vlg_tst
+vALU_74181
+R1
+!i10b 1
+!s100 W80B1ZNj4JzlA`hHnU]ma0
+IfaN18T=WZWCTN94DL[=9O2
+R2
+R0
+w1699352981
+8D:/Quartus/ALU_64bit/ALU_74181.v
+FD:/Quartus/ALU_64bit/ALU_74181.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1703951422.591000
+!s107 D:/Quartus/ALU_64bit/ALU_74181.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/ALU_64bit|D:/Quartus/ALU_64bit/ALU_74181.v|
+!i113 1
+R5
+R6
+n@a@l@u_74181
+vALU_74182
+R1
+!i10b 1
+!s100 1oRz?GRIg@;e>WY[lkDS63
+IVi90A1_fgPXzhPC5MBlEM0
+R2
+R0
+w1699350399
+8D:/Quartus/ALU_64bit/ALU_74182.v
+FD:/Quartus/ALU_64bit/ALU_74182.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1703951422.531000
+!s107 D:/Quartus/ALU_64bit/ALU_74182.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/ALU_64bit|D:/Quartus/ALU_64bit/ALU_74182.v|
+!i113 1
+R5
+R6
+n@a@l@u_74182

@@ -1,0 +1,5 @@
+module Pc(
+	input clk,
+	input reset,
+	input	[31:0]nextPc,
+);

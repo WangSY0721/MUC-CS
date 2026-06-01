@@ -1,0 +1,171 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// PROGRAM		"Quartus II 64-Bit"
+// VERSION		"Version 15.0.0 Build 145 04/22/2015 SJ Full Version"
+// CREATED		"Thu May 20 12:03:50 2021"
+
+module Cpu(
+	clk
+);
+
+
+input wire	clk;
+
+wire	[5:0] SYNTHESIZED_WIRE_0;
+wire	[5:0] SYNTHESIZED_WIRE_1;
+wire	SYNTHESIZED_WIRE_2;
+wire	[31:0] SYNTHESIZED_WIRE_36;
+wire	[31:0] SYNTHESIZED_WIRE_4;
+wire	SYNTHESIZED_WIRE_5;
+wire	[31:0] SYNTHESIZED_WIRE_37;
+wire	[31:0] SYNTHESIZED_WIRE_38;
+wire	SYNTHESIZED_WIRE_8;
+wire	[4:0] SYNTHESIZED_WIRE_39;
+wire	[4:0] SYNTHESIZED_WIRE_10;
+wire	[15:0] SYNTHESIZED_WIRE_11;
+wire	[4:0] SYNTHESIZED_WIRE_12;
+wire	[31:0] SYNTHESIZED_WIRE_13;
+wire	[31:0] SYNTHESIZED_WIRE_14;
+wire	[4:0] SYNTHESIZED_WIRE_15;
+wire	SYNTHESIZED_WIRE_16;
+wire	SYNTHESIZED_WIRE_17;
+wire	[31:0] SYNTHESIZED_WIRE_40;
+wire	SYNTHESIZED_WIRE_20;
+wire	[31:0] SYNTHESIZED_WIRE_21;
+wire	[31:0] SYNTHESIZED_WIRE_23;
+wire	SYNTHESIZED_WIRE_25;
+wire	[31:0] SYNTHESIZED_WIRE_26;
+wire	SYNTHESIZED_WIRE_27;
+wire	[4:0] SYNTHESIZED_WIRE_28;
+wire	[4:0] SYNTHESIZED_WIRE_30;
+wire	[31:0] SYNTHESIZED_WIRE_31;
+wire	SYNTHESIZED_WIRE_34;
+wire	SYNTHESIZED_WIRE_35;
+
+
+
+
+
+UnitControl	b2v_inst(
+	.func(SYNTHESIZED_WIRE_0),
+	.op(SYNTHESIZED_WIRE_1),
+	
+	.Branch(SYNTHESIZED_WIRE_35),
+	.Memwre(SYNTHESIZED_WIRE_16),
+	.Memread(SYNTHESIZED_WIRE_17),
+	.Regwre(SYNTHESIZED_WIRE_27),
+	.ALUsrc(SYNTHESIZED_WIRE_5),
+	.RegDst(SYNTHESIZED_WIRE_8),
+	.MemtoReg(SYNTHESIZED_WIRE_20),
+	.Pcwre(SYNTHESIZED_WIRE_25),
+	.ALUOp(SYNTHESIZED_WIRE_12));
+
+
+Mux2_1	b2v_inst1(
+	.sign(SYNTHESIZED_WIRE_2),
+	.DataA(SYNTHESIZED_WIRE_36),
+	.DataB(SYNTHESIZED_WIRE_4),
+	.OData(SYNTHESIZED_WIRE_26));
+
+
+Mux2_1	b2v_inst10(
+	.sign(SYNTHESIZED_WIRE_5),
+	.DataA(SYNTHESIZED_WIRE_37),
+	.DataB(SYNTHESIZED_WIRE_38),
+	.OData(SYNTHESIZED_WIRE_14));
+
+
+Mux2_1_5	b2v_inst11(
+	.sign(SYNTHESIZED_WIRE_8),
+	.dataA(SYNTHESIZED_WIRE_39),
+	.dataB(SYNTHESIZED_WIRE_10),
+	.Odata(SYNTHESIZED_WIRE_30));
+
+
+Extend	b2v_inst12(
+	.imme(SYNTHESIZED_WIRE_11),
+	.extendImme(SYNTHESIZED_WIRE_38));
+
+
+MyALU	b2v_inst14(
+	.ALUOp(SYNTHESIZED_WIRE_12),
+	.ReadData1(SYNTHESIZED_WIRE_13),
+	.ReadData2(SYNTHESIZED_WIRE_14),
+	.sa(SYNTHESIZED_WIRE_15),
+	.zero(SYNTHESIZED_WIRE_34),
+	.result(SYNTHESIZED_WIRE_40));
+
+
+DataMem	b2v_inst16(
+	.Wren(SYNTHESIZED_WIRE_16),
+	.Read(SYNTHESIZED_WIRE_17),
+	.DAddr(SYNTHESIZED_WIRE_40),
+	.Data(SYNTHESIZED_WIRE_37),
+	.Mout(SYNTHESIZED_WIRE_21));
+
+
+Mux2_1	b2v_inst17(
+	.sign(SYNTHESIZED_WIRE_20),
+	.DataA(SYNTHESIZED_WIRE_21),
+	.DataB(SYNTHESIZED_WIRE_40),
+	.OData(SYNTHESIZED_WIRE_31));
+
+
+InstructionCut	b2v_inst2(
+	.Inst(SYNTHESIZED_WIRE_23),
+	
+	.FUNC(SYNTHESIZED_WIRE_0),
+	.IMME(SYNTHESIZED_WIRE_11),
+	.OP(SYNTHESIZED_WIRE_1),
+	.RD(SYNTHESIZED_WIRE_10),
+	.RS(SYNTHESIZED_WIRE_28),
+	.RT(SYNTHESIZED_WIRE_39),
+	.SHMAT(SYNTHESIZED_WIRE_15));
+
+
+InstructionMem	b2v_inst3(
+	.Addr(SYNTHESIZED_WIRE_36),
+	.Iout(SYNTHESIZED_WIRE_23));
+
+
+Pc	b2v_inst4(
+	.clk(clk),
+	
+	.Pcwre(SYNTHESIZED_WIRE_25),
+	.nextPc(SYNTHESIZED_WIRE_26),
+	.curPc(SYNTHESIZED_WIRE_36));
+
+
+RegFile	b2v_inst5(
+	.clk(clk),
+	.Regwre(SYNTHESIZED_WIRE_27),
+	.Regs(SYNTHESIZED_WIRE_28),
+	.Regt(SYNTHESIZED_WIRE_39),
+	.Regw(SYNTHESIZED_WIRE_30),
+	.wdata(SYNTHESIZED_WIRE_31),
+	.outputReg1(SYNTHESIZED_WIRE_13),
+	.outputReg2(SYNTHESIZED_WIRE_37));
+
+
+Add	b2v_inst6(
+	.DataA(SYNTHESIZED_WIRE_36),
+	.DataB(SYNTHESIZED_WIRE_38),
+	.sum(SYNTHESIZED_WIRE_4));
+
+assign	SYNTHESIZED_WIRE_2 = SYNTHESIZED_WIRE_34 & SYNTHESIZED_WIRE_35;
+
+
+endmodule

@@ -1,0 +1,226 @@
+# Reading D:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do Cpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/InstructionCut.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:13 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/InstructionCut.v 
+# -- Compiling module InstructionCut
+# 
+# Top level modules:
+# 	InstructionCut
+# End time: 10:05:13 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/RegFile.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:14 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/RegFile.v 
+# -- Compiling module RegFile
+# 
+# Top level modules:
+# 	RegFile
+# End time: 10:05:14 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/Cpu.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:14 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/Cpu.v 
+# -- Compiling module Cpu
+# 
+# Top level modules:
+# 	Cpu
+# End time: 10:05:14 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/result.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:14 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/result.v 
+# -- Compiling module Result
+# 
+# Top level modules:
+# 	Result
+# End time: 10:05:14 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/unitcontrol.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:14 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/unitcontrol.v 
+# -- Compiling module UnitControl
+# 
+# Top level modules:
+# 	UnitControl
+# End time: 10:05:14 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/mux2_1.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:14 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/mux2_1.v 
+# -- Compiling module Mux2_1
+# 
+# Top level modules:
+# 	Mux2_1
+# End time: 10:05:14 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/mux2_1_5.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:14 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/mux2_1_5.v 
+# -- Compiling module Mux2_1_5
+# 
+# Top level modules:
+# 	Mux2_1_5
+# End time: 10:05:14 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/extend.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:14 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/extend.v 
+# -- Compiling module Extend
+# 
+# Top level modules:
+# 	Extend
+# End time: 10:05:14 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/myalu.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:14 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/myalu.v 
+# -- Compiling module MyALU
+# 
+# Top level modules:
+# 	MyALU
+# End time: 10:05:15 on Nov 17,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/datamem.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:15 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/datamem.v 
+# -- Compiling module DataMem
+# 
+# Top level modules:
+# 	DataMem
+# End time: 10:05:15 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/instructionmem.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:15 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/instructionmem.v 
+# -- Compiling module InstructionMem
+# 
+# Top level modules:
+# 	InstructionMem
+# End time: 10:05:15 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/inputnumber.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:15 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/inputnumber.v 
+# -- Compiling module inputNumber
+# 
+# Top level modules:
+# 	inputNumber
+# End time: 10:05:15 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/inputextend.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:15 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/inputextend.v 
+# -- Compiling module inputextend
+# 
+# Top level modules:
+# 	inputextend
+# End time: 10:05:15 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/pc.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:15 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/pc.v 
+# -- Compiling module Pc
+# 
+# Top level modules:
+# 	Pc
+# End time: 10:05:15 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/add.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:15 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/add.v 
+# -- Compiling module Add
+# 
+# Top level modules:
+# 	Add
+# End time: 10:05:15 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu {D:/Users/Berton/Desktop/SingleCPU/AMycpu/left.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:15 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu" D:/Users/Berton/Desktop/SingleCPU/AMycpu/left.v 
+# -- Compiling module Left
+# 
+# Top level modules:
+# 	Left
+# End time: 10:05:15 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu/simulation/modelsim {D:/Users/Berton/Desktop/SingleCPU/AMycpu/simulation/modelsim/Cpu.vt}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:05:16 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Berton/Desktop/SingleCPU/AMycpu/simulation/modelsim" D:/Users/Berton/Desktop/SingleCPU/AMycpu/simulation/modelsim/Cpu.vt 
+# -- Compiling module Cpu_vlg_tst
+# 
+# Top level modules:
+# 	Cpu_vlg_tst
+# End time: 10:05:16 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  Cpu_vlg_tst
+# vsim -gui "+altera" -l msim_transcript -do "Cpu_run_msim_rtl_verilog.do" 
+# Start time: 10:05:16 on Nov 17,2024
+# Loading work.Cpu_vlg_tst
+# Loading work.Cpu
+# Loading work.Result
+# Loading work.UnitControl
+# Loading work.Mux2_1
+# Loading work.Mux2_1_5
+# Loading work.Extend
+# Loading work.MyALU
+# Loading work.DataMem
+# Loading work.InstructionCut
+# Loading work.InstructionMem
+# Loading work.inputNumber
+# Loading work.inputextend
+# Loading work.Pc
+# Loading work.RegFile
+# Loading work.Add
+# Loading work.Left
+# ** Warning: (vsim-3017) D:/Users/Berton/Desktop/SingleCPU/AMycpu/Cpu.v(85): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /Cpu_vlg_tst/i1/b2v_inst
+# ** Warning: (vsim-3722) D:/Users/Berton/Desktop/SingleCPU/AMycpu/Cpu.v(85): [TFMPC] - Missing connection for port 'jump'.
+# 
+# ** Warning: (vsim-3017) D:/Users/Berton/Desktop/SingleCPU/AMycpu/Cpu.v(150): [TFMPC] - Too few port connections. Expected 10, found 9.
+# 
+#         Region: /Cpu_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) D:/Users/Berton/Desktop/SingleCPU/AMycpu/Cpu.v(150): [TFMPC] - Missing connection for port 'ADDR'.
+# 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 2000 ns
+# End time: 10:06:47 on Nov 17,2024, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 4

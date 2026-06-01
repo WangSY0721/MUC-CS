@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点赞效果</title>
+    <style>
+        /* 为点赞区域设置样式 */
+        .item {
+            position: relative;  /* 设定相对定位，方便绝对定位的元素放置 */
+            width: 200px;        /* 设置容器的宽度 */
+            height: 100px;       /* 设置容器的高度 */
+            background-color: lightgray; /* 设置背景颜色 */
+            border-radius: 10px; /* 设置圆角边框 */
+            padding: 10px;       /* 添加内边距，避免内容贴边 */
+            font-size: 18px;     /* 设置字体大小 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 点赞区域 -->
+    <div class="item">
+        <span>赞</span>
+    </div>
+
+    <!-- 引入jQuery库 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // 处理点赞效果，当点击“赞”文本时触发事件
+            $('.item span').click(function () {
+                // 创建一个新的span元素，显示+1
+                var tag = document.createElement('span');
+                $(tag).text('+1');  // 设置新span的文本为“+1”
+
+                // 设置新span元素的样式
+                $(tag).css({
+                    'color': '#ff6600',
+                    'position': 'absolute',              // 设置绝对定位
+                    'top': '10px',                       // 设置距离父容器顶部10px
+                    'left': '50%',                       // 设置距离父容器左边50%（中心位置）
+                    'transform': 'translateX(-50%)',     // 通过平移将元素准确居中
+                    'opacity': 1                          // 初始透明度为1（完全不透明）
+                });
+
+                // 将新的span元素添加到父容器中
+                $('.item').append(tag);
+
+                // 定义一个计时器，每隔35毫秒更新一次透明度
+                var interval = setInterval(function () {
+                    // 获取当前元素的透明度
+                    var opacity = parseFloat($(tag).css('opacity'));
+                    
+                    if (opacity <= 0) {
+                        // 当透明度小于等于0时，停止计时器并移除元素
+                        clearInterval(interval);  // 停止计时器
+                        $(tag).remove();           // 移除该元素
+                    } else {
+                        // 每次减少0.05的透明度
+                        $(tag).css('opacity', opacity - 0.05);
+                    }
+                }, 35);  // 每35毫秒更新一次透明度
+            });
+        });
+    </script>
+</body>
+</html>

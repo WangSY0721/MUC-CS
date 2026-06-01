@@ -1,0 +1,27 @@
+|inputNumber
+clk => OutputRandomNumber[0]~reg0.CLK
+clk => OutputRandomNumber[1]~reg0.CLK
+clk => OutputRandomNumber[2]~reg0.CLK
+clk => OutputRandomNumber[3]~reg0.CLK
+clk => OutputRandomNumber[4]~reg0.CLK
+clk => OutputRandomNumber[5]~reg0.CLK
+clk => OutputRandomNumber[6]~reg0.CLK
+clk => OutputRandomNumber[7]~reg0.CLK
+RandomNumber[0] => OutputRandomNumber[0]~reg0.DATAIN
+RandomNumber[1] => OutputRandomNumber[1]~reg0.DATAIN
+RandomNumber[2] => OutputRandomNumber[2]~reg0.DATAIN
+RandomNumber[3] => OutputRandomNumber[3]~reg0.DATAIN
+RandomNumber[4] => OutputRandomNumber[4]~reg0.DATAIN
+RandomNumber[5] => OutputRandomNumber[5]~reg0.DATAIN
+RandomNumber[6] => OutputRandomNumber[6]~reg0.DATAIN
+RandomNumber[7] => OutputRandomNumber[7]~reg0.DATAIN
+OutputRandomNumber[0] <= OutputRandomNumber[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+OutputRandomNumber[1] <= OutputRandomNumber[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+OutputRandomNumber[2] <= OutputRandomNumber[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+OutputRandomNumber[3] <= OutputRandomNumber[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+OutputRandomNumber[4] <= OutputRandomNumber[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+OutputRandomNumber[5] <= OutputRandomNumber[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+OutputRandomNumber[6] <= OutputRandomNumber[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+OutputRandomNumber[7] <= OutputRandomNumber[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

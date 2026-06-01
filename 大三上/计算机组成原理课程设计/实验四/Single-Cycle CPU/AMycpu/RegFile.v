@@ -1,0 +1,40 @@
+module RegFile(
+	input myreset,
+	input clk,		//时钟
+	input Regwre,		//写使能
+	input [4:0]Regs,	//rs地址
+	input [4:0]Regt,	//rt地址
+	input [4:0]Regw,	//写寄存器地址，可能是rt也可能是rd
+	input [31:0]wdata,//写数据进入寄存器时的数据
+	
+	output [31:0] outputReg1,
+	output [31:0] outputReg2,
+	output [31:0] outputReg3
+	
+);
+
+reg [31:0] Regf[0:31];//32个32为寄存器
+
+assign outputReg1=Regf[Regs];
+assign outputReg2=Regf[Regt];
+assign outputReg3=Regf[2];
+
+integer i;
+initial
+begin
+	for(i=0;i<32;i=i+1)
+		Regf[i]=0;
+end
+always @(posedge clk)
+begin
+	//$0恒为0,所以写入寄存器的地址不能为0
+	if(Regwre && Regw)
+		Regf[Regw]=wdata;
+	if(myreset)
+	begin
+		for(i=0;i<32;i=i+1)
+			Regf[i]=0;
+	end
+end
+
+endmodule

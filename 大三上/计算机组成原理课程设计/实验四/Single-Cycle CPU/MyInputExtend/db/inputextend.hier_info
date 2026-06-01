@@ -1,0 +1,43 @@
+|inputextend
+RandomNumber[0] => outputNumber[0].DATAIN
+RandomNumber[1] => outputNumber[1].DATAIN
+RandomNumber[2] => outputNumber[2].DATAIN
+RandomNumber[3] => outputNumber[3].DATAIN
+RandomNumber[4] => outputNumber[4].DATAIN
+RandomNumber[5] => outputNumber[5].DATAIN
+RandomNumber[6] => outputNumber[6].DATAIN
+RandomNumber[7] => outputNumber[7].DATAIN
+outputNumber[0] <= RandomNumber[0].DB_MAX_OUTPUT_PORT_TYPE
+outputNumber[1] <= RandomNumber[1].DB_MAX_OUTPUT_PORT_TYPE
+outputNumber[2] <= RandomNumber[2].DB_MAX_OUTPUT_PORT_TYPE
+outputNumber[3] <= RandomNumber[3].DB_MAX_OUTPUT_PORT_TYPE
+outputNumber[4] <= RandomNumber[4].DB_MAX_OUTPUT_PORT_TYPE
+outputNumber[5] <= RandomNumber[5].DB_MAX_OUTPUT_PORT_TYPE
+outputNumber[6] <= RandomNumber[6].DB_MAX_OUTPUT_PORT_TYPE
+outputNumber[7] <= RandomNumber[7].DB_MAX_OUTPUT_PORT_TYPE
+outputNumber[8] <= <GND>
+outputNumber[9] <= <GND>
+outputNumber[10] <= <GND>
+outputNumber[11] <= <GND>
+outputNumber[12] <= <GND>
+outputNumber[13] <= <GND>
+outputNumber[14] <= <GND>
+outputNumber[15] <= <GND>
+outputNumber[16] <= <GND>
+outputNumber[17] <= <GND>
+outputNumber[18] <= <GND>
+outputNumber[19] <= <GND>
+outputNumber[20] <= <GND>
+outputNumber[21] <= <GND>
+outputNumber[22] <= <GND>
+outputNumber[23] <= <GND>
+outputNumber[24] <= <GND>
+outputNumber[25] <= <GND>
+outputNumber[26] <= <GND>
+outputNumber[27] <= <GND>
+outputNumber[28] <= <GND>
+outputNumber[29] <= <GND>
+outputNumber[30] <= <GND>
+outputNumber[31] <= <GND>
+
+

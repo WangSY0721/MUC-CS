@@ -1,0 +1,30 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/Cpu.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/result.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/unitcontrol.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/mux2_1.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/mux2_1_5.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/extend.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/myalu.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/datamem.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/instructioncut.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/instructionmem.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/pc.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/regfile.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/add.v}
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu {D:/Ajzlab/lab4/AMycpu/left.v}
+
+vlog -vlog01compat -work work +incdir+D:/Ajzlab/lab4/AMycpu/simulation/modelsim {D:/Ajzlab/lab4/AMycpu/simulation/modelsim/Cpu.vt}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  Cpu_vlg_tst
+
+add wave *
+view structure
+view signals
+run 2000 ns

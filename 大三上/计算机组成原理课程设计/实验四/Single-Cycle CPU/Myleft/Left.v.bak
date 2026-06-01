@@ -1,0 +1,3 @@
+module Left(
+	input [31:0] datain,
+);

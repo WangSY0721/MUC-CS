@@ -1,0 +1,4 @@
+module InstructionMem(
+	input [31:0] Addr,
+	output reg[31:0] Iout
+);

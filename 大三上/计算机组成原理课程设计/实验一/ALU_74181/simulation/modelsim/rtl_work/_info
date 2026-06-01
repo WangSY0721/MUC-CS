@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Quartus/lab1/simulation/modelsim
+vALU_74181
+Z1 !s110 1698831783
+!i10b 1
+!s100 oOz8k[moJK4ONYHe4af@92
+I]mj1ibP;c[dj`=B>l^A9=2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1698831765
+8D:/Quartus/lab1/ALU_74181.v
+FD:/Quartus/lab1/ALU_74181.v
+L0 1
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1698831783.378000
+!s107 D:/Quartus/lab1/ALU_74181.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/lab1|D:/Quartus/lab1/ALU_74181.v|
+!i113 1
+Z4 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/Quartus/lab1
+n@a@l@u_74181
+vALU_74181_vlg_tst
+R1
+!i10b 1
+!s100 zPLi4HZ7O^SAEO?NPCOgg0
+IJ<GYVMV@jK^V`:f9le[Y`0
+R2
+R0
+w1698830596
+8D:/Quartus/lab1/simulation/modelsim/ALU_74181.vt
+FD:/Quartus/lab1/simulation/modelsim/ALU_74181.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1698831783.445000
+!s107 D:/Quartus/lab1/simulation/modelsim/ALU_74181.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/lab1/simulation/modelsim|D:/Quartus/lab1/simulation/modelsim/ALU_74181.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/Quartus/lab1/simulation/modelsim
+n@a@l@u_74181_vlg_tst

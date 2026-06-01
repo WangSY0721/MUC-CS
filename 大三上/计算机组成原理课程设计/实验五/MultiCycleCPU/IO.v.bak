@@ -1,0 +1,10 @@
+`timescale 1ns / 1ps
+//I/O
+module IO(
+input [3:0] x,	
+input whether_input,
+input	whether_output,
+output InPut,
+output OutPut
+);
+

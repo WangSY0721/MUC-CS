@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选项卡示例</title>
+    
+    <!-- 内联CSS样式 -->
+    <style>
+        /* 设置页面主体的字体 */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* 选项卡容器的样式 */
+        #tab-container {
+            width: 300px;
+            margin: 0 auto;        /* 居中显示 */
+        }
+
+        /* 选项卡导航的样式 */
+        #tag {
+            list-style-type: none; /* 移除列表的默认样式 */
+            padding: 0;            /* 内边距 */
+            margin: 0;             /* 外边距 */
+            display: flex;         /* 使用flex布局让选项卡水平排列 */
+            border-bottom: 2px solid #ccc; /* 添加底部边框 */
+        }
+
+        /* 选项卡项的样式 */
+        #tag li {
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;         /* 鼠标悬停时显示为可点击 */
+            text-align: center;       /* 文本居中对齐 */
+            background-color: #f0f0f0; /* 背景色为灰色 */
+            flex: 1;                  /* 每个选项卡占据相同的空间 */
+        }
+
+        /* 给选中的选项卡添加的样式 */
+        #tag li.cur {
+            background-color: #ddd; /* 选中的选项卡背景色改变 */
+        }
+
+        /* 内容区的样式 */
+        .tab-content {
+            display: none;           /* 默认隐藏所有内容 */
+            padding: 20px;           /* 内边距为20px */
+            border-top: 2px solid #ccc; /* 顶部边框 */
+            background-color: #fafafa; /* 背景色为浅灰色 */
+        }
+
+        /* 显示当前选中的内容区 */
+        .tab-content.active {
+            display: block;         /* 显示当前选中的内容 */
+        }
+    </style>
+
+    <!-- 引入jQuery库 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery脚本，用于实现选项卡切换功能 -->
+    <script>
+        $(document).ready(function() {
+            // 默认选中第一个选项卡，并显示第一个内容
+            $('#tag li').eq(0).addClass('cur'); // 给第一个li添加"cur"类，表示选中状态
+            $('.tab-content').eq(0).addClass('active'); // 显示第一个内容区域，其他内容隐藏
+
+            // 监听点击事件，当点击选项卡时切换内容
+            $('#tag li').click(function() {
+                // 获取当前点击的选项卡的索引（0为第一个选项卡，1为第二个选项卡）
+                var index = $(this).index();
+
+                // 给当前选项卡添加"cur"类，并移除兄弟元素的"cur"类
+                $(this).addClass('cur').siblings().removeClass('cur');
+
+                // 显示对应内容并隐藏其他内容
+                $('.tab-content').eq(index).addClass('active').siblings().removeClass('active');
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- 选项卡容器 -->
+    <div id="tab-container">
+        <!-- 选项卡导航 -->
+        <ul id="tag">
+            <li class="tab" data-tab="1">选项卡一</li>
+            <li class="tab" data-tab="2">选项卡二</li>
+        </ul>
+
+        <!-- 内容区 -->
+        <div class="tab-content" id="content-1">内容一</div>
+        <div class="tab-content" id="content-2">内容二</div>
+    </div>
+
+</body>
+</html>

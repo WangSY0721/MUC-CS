@@ -1,0 +1,11 @@
+module Result(
+	input [31:0] result,
+	output reg[6:0] out1,
+	output reg[6:0] out2,
+	output reg[6:0] out3,
+	output reg[6:0] out4,
+	output reg[6:0] out5,
+	output reg[6:0] out6,
+	output reg[6:0] out7,
+	output reg[6:0] out8
+);

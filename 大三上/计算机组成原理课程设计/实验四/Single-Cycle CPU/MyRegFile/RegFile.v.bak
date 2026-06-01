@@ -1,0 +1,4 @@
+module(
+	input clk;			//时钟
+	input Regwre;		//写使能
+);

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}文章列表{% endblock %}
+{% block content %}
+<div style="margin-top: 20px">
+    <h3>文章列表</h3>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>文章</th>
+            <th>作者</th>
+            <th>标题</th>
+            <th>发布时间</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for article in articles %}
+                <tr>
+                    <td>{{article.id}}</td>
+                    <td>{{article.user.username}}</td>
+                    <td>{{article.title}}</td>
+                    <td>{{article.publish_date | date:'Y-m-d'}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

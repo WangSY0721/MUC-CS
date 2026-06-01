@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -17.284
+TNS   : -1454.176
+
+Type  : Slow 1100mV 85C Model Setup 'Pc:b2v_inst4|curPc[2]'
+Slack : -11.516
+TNS   : -43.014
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -7.871
+TNS   : -550.239
+
+Type  : Slow 1100mV 85C Model Hold 'Pc:b2v_inst4|curPc[2]'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -65.939
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Pc:b2v_inst4|curPc[2]'
+Slack : 0.069
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -17.239
+TNS   : -1433.876
+
+Type  : Slow 1100mV 0C Model Setup 'Pc:b2v_inst4|curPc[2]'
+Slack : -11.282
+TNS   : -42.309
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -7.721
+TNS   : -544.260
+
+Type  : Slow 1100mV 0C Model Hold 'Pc:b2v_inst4|curPc[2]'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -61.734
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Pc:b2v_inst4|curPc[2]'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -10.100
+TNS   : -855.314
+
+Type  : Fast 1100mV 85C Model Setup 'Pc:b2v_inst4|curPc[2]'
+Slack : -6.188
+TNS   : -22.471
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -4.390
+TNS   : -298.888
+
+Type  : Fast 1100mV 85C Model Hold 'Pc:b2v_inst4|curPc[2]'
+Slack : 0.216
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.311
+TNS   : -33.606
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Pc:b2v_inst4|curPc[2]'
+Slack : 0.133
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -9.024
+TNS   : -762.331
+
+Type  : Fast 1100mV 0C Model Setup 'Pc:b2v_inst4|curPc[2]'
+Slack : -5.808
+TNS   : -21.231
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -4.285
+TNS   : -302.514
+
+Type  : Fast 1100mV 0C Model Hold 'Pc:b2v_inst4|curPc[2]'
+Slack : 0.218
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.295
+TNS   : -32.033
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Pc:b2v_inst4|curPc[2]'
+Slack : 0.204
+TNS   : 0.000
+
+------------------------------------------------------------

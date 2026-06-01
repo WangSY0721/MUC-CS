@@ -1,0 +1,51 @@
+# Reading D:/Quartus/modelsim_ase/tcl/vsim/pref.tcl
+# do Multiplier_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/Quartus/newlab2/Multiplier/Multiplier {D:/Quartus/newlab2/Multiplier/Multiplier/Multiplier.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:10 on Jan 01,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Quartus/newlab2/Multiplier/Multiplier" D:/Quartus/newlab2/Multiplier/Multiplier/Multiplier.v 
+# -- Compiling module Multiplier
+# 
+# Top level modules:
+# 	Multiplier
+# End time: 23:01:10 on Jan 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Quartus/newlab2/Multiplier/Multiplier/simulation/modelsim {D:/Quartus/newlab2/Multiplier/Multiplier/simulation/modelsim/Multiplier.vt}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:10 on Jan 01,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Quartus/newlab2/Multiplier/Multiplier/simulation/modelsim" D:/Quartus/newlab2/Multiplier/Multiplier/simulation/modelsim/Multiplier.vt 
+# -- Compiling module Multiplier_vlg_tst
+# 
+# Top level modules:
+# 	Multiplier_vlg_tst
+# End time: 23:01:10 on Jan 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  Multiplier_vlg_tst
+# vsim -gui "+altera" -l msim_transcript -do "Multiplier_run_msim_rtl_verilog.do" 
+# Start time: 23:01:10 on Jan 01,2024
+# Loading work.Multiplier_vlg_tst
+# Loading work.Multiplier
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 200 ns
+# Running testbench
+# End time: 23:01:30 on Jan 01,2024, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 0
